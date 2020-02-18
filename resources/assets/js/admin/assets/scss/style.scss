@@ -1,0 +1,17 @@
+// Override Boostrap variables
+// @import "bootstrap-variables";
+
+// Import Bootstrap source files
+@import "~bootstrap/scss/bootstrap";
+
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+// ie fixes
+@import "ie-fix";
