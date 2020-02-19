@@ -126,7 +126,7 @@ var render = function() {
                                       staticClass: "form-control",
                                       attrs: {
                                         type: "text",
-                                        placeholder: "Username",
+                                        placeholder: "Email",
                                         autocomplete: "username email"
                                       }
                                     })

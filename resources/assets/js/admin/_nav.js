@@ -11,7 +11,7 @@ export default {
     },
     {
       title: true,
-      name: 'Theme',
+      name: '',
       class: '',
       wrapper: {
         element: '',

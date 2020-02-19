@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import config from '../constants/config';
 
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
@@ -69,12 +70,12 @@ function configRoutes() {
       component: DefaultContainer,
       children: [
         {
-          path: 'dashboard',
+          path: '/dashboard',
           name: 'Dashboard',
           component: Dashboard
         },
         {
-          path: 'theme',
+          path: '/theme',
           redirect: '/theme/colors',
           name: 'Theme',
           component: {
@@ -317,24 +318,47 @@ function configRoutes() {
           name: 'Page500',
           component: Page500
         },
-        {
-          path: 'login',
-          name: 'Login',
-          component: Login
-        },
-        {
-          path: 'register',
-          name: 'Register',
-          component: Register
-        }
+        // {
+        //   path: 'login',
+        //   name: 'Login',
+        //   component: Login
+        // },
+        // {
+        //   path: 'register',
+        //   name: 'Register',
+        //   component: Register
+        // }
       ]
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
     }
   ]
 }
 
-export default new Router({
-  mode: 'hash', // https://router.vuejs.org/api/#mode
+const router = new Router({
+  base: '/admin',
+  mode: 'history', // https://router.vuejs.org/api/#mode
   linkActiveClass: 'open active',
   scrollBehavior: () => ({ y: 0 }),
   routes: configRoutes()
-})
+});
+
+router.beforeEach((to, from, next) => {
+  const publicPages = config.publicPages;
+  const authRequest = !publicPages.includes(to.path);
+  const loginIn = localStorage.getItem('token');
+  if (authRequest && !loginIn) {
+    return next('/login');
+  }
+  return next();
+});
+
+export default router;

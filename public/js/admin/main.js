@@ -76302,6 +76302,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/js/admin/constants/config.js":
+/*!*******************************************************!*\
+  !*** ./resources/assets/js/admin/constants/config.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var config = {
+  publicPages: ['/login', '/register']
+};
+/* harmony default export */ __webpack_exports__["default"] = (config);
+
+/***/ }),
+
 /***/ "./resources/assets/js/admin/main.js":
 /*!*******************************************!*\
   !*** ./resources/assets/js/admin/main.js ***!
@@ -76360,6 +76376,8 @@ new vue__WEBPACK_IMPORTED_MODULE_3__["default"]({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _constants_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants/config */ "./resources/assets/js/admin/constants/config.js");
+
 
  // Containers
 
@@ -76535,11 +76553,11 @@ function configRoutes() {
     name: 'Home',
     component: DefaultContainer,
     children: [{
-      path: 'dashboard',
+      path: '/dashboard',
       name: 'Dashboard',
       component: Dashboard
     }, {
-      path: 'theme',
+      path: '/theme',
       redirect: '/theme/colors',
       name: 'Theme',
       component: {
@@ -76751,20 +76769,31 @@ function configRoutes() {
       path: '500',
       name: 'Page500',
       component: Page500
-    }, {
-      path: 'login',
-      name: 'Login',
-      component: Login
-    }, {
-      path: 'register',
-      name: 'Register',
-      component: Register
-    }]
+    } // {
+    //   path: 'login',
+    //   name: 'Login',
+    //   component: Login
+    // },
+    // {
+    //   path: 'register',
+    //   name: 'Register',
+    //   component: Register
+    // }
+    ]
+  }, {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  }, {
+    path: '/register',
+    name: 'Register',
+    component: Register
   }];
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: 'hash',
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
+  base: '/admin',
+  mode: 'history',
   // https://router.vuejs.org/api/#mode
   linkActiveClass: 'open active',
   scrollBehavior: function scrollBehavior() {
@@ -76773,7 +76802,19 @@ function configRoutes() {
     };
   },
   routes: configRoutes()
-}));
+});
+router.beforeEach(function (to, from, next) {
+  var publicPages = _constants_config__WEBPACK_IMPORTED_MODULE_2__["default"].publicPages;
+  var authRequest = !publicPages.includes(to.path);
+  var loginIn = localStorage.getItem('user-token');
+
+  if (authRequest && !loginIn) {
+    return next('/login');
+  }
+
+  return next();
+});
+/* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
 

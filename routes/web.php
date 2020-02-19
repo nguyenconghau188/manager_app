@@ -10,8 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/admin', function () {
-    return view('admin.index');
+// Route::get('admin', function () {
+//     return view('admin.index');
+// });
+Route::group(['prefix' => 'admin'], function () {
+    // echo 'admin';
+    Route::any('/{any?}', function() {
+        return view('admin.index');
+    });
 });
 Route::get('/', function () {
     return view('welcome');

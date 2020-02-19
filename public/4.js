@@ -1648,7 +1648,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   }, {
     title: true,
-    name: 'Theme',
+    name: '',
     class: '',
     wrapper: {
       element: '',
