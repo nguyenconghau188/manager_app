@@ -9,6 +9,14 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _common_commonFunctions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/commonFunctions */ "./resources/assets/js/admin/common/commonFunctions.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -55,8 +63,92 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Login'
+  name: 'Login',
+  data: function data() {
+    return {
+      email: '',
+      emailError: '',
+      emailState: true,
+      password: '',
+      passwordError: '',
+      passwordState: true,
+      isSubmited: false
+    };
+  },
+  created: function created() {
+    this.forceLogout();
+  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])('user', ['user', 'isLogin'])),
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('user', ['login', 'forceLogout']), {
+    handleSubmit: function handleSubmit() {
+      this.isSubmited = true;
+
+      if (this.validateForm()) {
+        var email = this.email,
+            password = this.password;
+        this.login({
+          email: email,
+          password: password
+        });
+      }
+    },
+    validateForm: function validateForm() {
+      var result = true;
+
+      if (this.password === '') {
+        result = false;
+        this.passwordState = false;
+        this.passwordError = 'Please enter password!';
+      } else if (this.password.length <= 6) {
+        result = false;
+        this.passwordState = false;
+        this.passwordError = 'Password has least 6 charactors!';
+      } else {
+        this.passwordState = true;
+        this.passwordError = '';
+      }
+
+      if (this.email === '') {
+        result = false;
+        this.emailState = false;
+        this.emailError = 'Please enter email!';
+      } else if (!Object(_common_commonFunctions__WEBPACK_IMPORTED_MODULE_1__["validateEmail"])(this.email)) {
+        result = false;
+        this.emailState = false;
+        this.emailError = 'Wrong format email!';
+      } else {
+        this.emailState = true;
+        this.emailError = '';
+      }
+
+      return result;
+    }
+  })
 });
 
 /***/ }),
@@ -101,6 +193,14 @@ var render = function() {
                           [
                             _c(
                               "b-form",
+                              {
+                                on: {
+                                  submit: function($event) {
+                                    $event.preventDefault()
+                                    return _vm.handleSubmit($event)
+                                  }
+                                }
+                              },
                               [
                                 _c("h1", [_vm._v("Login")]),
                                 _vm._v(" "),
@@ -127,9 +227,31 @@ var render = function() {
                                       attrs: {
                                         type: "text",
                                         placeholder: "Email",
-                                        autocomplete: "username email"
+                                        autocomplete: "username email",
+                                        state: _vm.emailState,
+                                        "aria-describedby":
+                                          "input-email-feedback"
+                                      },
+                                      model: {
+                                        value: _vm.email,
+                                        callback: function($$v) {
+                                          _vm.email = $$v
+                                        },
+                                        expression: "email"
                                       }
-                                    })
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "b-form-invalid-feedback",
+                                      { attrs: { id: "input-email-feedback" } },
+                                      [
+                                        _vm._v(
+                                          "\n                    " +
+                                            _vm._s(_vm.emailError) +
+                                            "\n                  "
+                                        )
+                                      ]
+                                    )
                                   ],
                                   1
                                 ),
@@ -153,9 +275,33 @@ var render = function() {
                                       attrs: {
                                         type: "password",
                                         placeholder: "Password",
-                                        autocomplete: "current-password"
+                                        autocomplete: "current-password",
+                                        state: _vm.passwordState,
+                                        "aria-describedby":
+                                          "input-password-feedback"
+                                      },
+                                      model: {
+                                        value: _vm.password,
+                                        callback: function($$v) {
+                                          _vm.password = $$v
+                                        },
+                                        expression: "password"
                                       }
-                                    })
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "b-form-invalid-feedback",
+                                      {
+                                        attrs: { id: "input-password-feedback" }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                    " +
+                                            _vm._s(_vm.passwordError) +
+                                            "\n                  "
+                                        )
+                                      ]
+                                    )
                                   ],
                                   1
                                 ),
@@ -171,7 +317,10 @@ var render = function() {
                                           "b-button",
                                           {
                                             staticClass: "px-4",
-                                            attrs: { variant: "primary" }
+                                            attrs: {
+                                              type: "submit",
+                                              variant: "primary"
+                                            }
                                           },
                                           [_vm._v("Login")]
                                         )
@@ -264,6 +413,26 @@ var staticRenderFns = []
 render._withStripped = true
 
 
+
+/***/ }),
+
+/***/ "./resources/assets/js/admin/common/commonFunctions.js":
+/*!*************************************************************!*\
+  !*** ./resources/assets/js/admin/common/commonFunctions.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  validateEmail: validateEmail
+});
 
 /***/ }),
 

@@ -6,20 +6,42 @@
           <b-card-group>
             <b-card no-body class="p-4">
               <b-card-body>
-                <b-form>
+                <b-form @submit.prevent="handleSubmit">
                   <h1>Login</h1>
                   <p class="text-muted">Sign In to your account</p>
                   <b-input-group class="mb-3">
                     <b-input-group-prepend><b-input-group-text><i class="icon-user"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="text" class="form-control" placeholder="Email" autocomplete="username email" />
+                    <b-form-input 
+                      type="text" 
+                      class="form-control" 
+                      placeholder="Email" 
+                      autocomplete="username email" 
+                      v-model="email" 
+                      :state="emailState"
+                      aria-describedby="input-email-feedback"
+                    />
+                    <b-form-invalid-feedback id="input-email-feedback">
+                      {{ emailError }}
+                    </b-form-invalid-feedback>
                   </b-input-group>
                   <b-input-group class="mb-4">
                     <b-input-group-prepend><b-input-group-text><i class="icon-lock"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="current-password" />
+                    <b-form-input 
+                      type="password" 
+                      class="form-control" 
+                      placeholder="Password" 
+                      autocomplete="current-password" 
+                      v-model="password" 
+                      :state="passwordState" 
+                      aria-describedby="input-password-feedback" 
+                    />
+                    <b-form-invalid-feedback id="input-password-feedback">
+                      {{ passwordError }}
+                    </b-form-invalid-feedback>
                   </b-input-group>
                   <b-row>
                     <b-col cols="6">
-                      <b-button variant="primary" class="px-4">Login</b-button>
+                      <b-button type="submit" variant="primary" class="px-4">Login</b-button>
                     </b-col>
                     <b-col cols="6" class="text-right">
                       <b-button variant="link" class="px-0">Forgot password?</b-button>
@@ -45,7 +67,69 @@
 </template>
 
 <script>
+import { mapActions, mapState } from "vuex";
+import { validateEmail } from '../../common/commonFunctions';
+
 export default {
-  name: 'Login'
+  name: 'Login',
+  data() {
+    return {
+      email: '',
+      emailError: '',
+      emailState: true,
+      password: '',
+      passwordError: '',
+      passwordState: true,
+      isSubmited: false,
+    };
+  },
+  created() {
+    this.forceLogout();
+  },
+  computed: {
+    ...mapState('user', ['user', 'isLogin']),
+  },
+  methods: {
+    ...mapActions('user', ['login', 'forceLogout']),
+    handleSubmit() {
+      this.isSubmited = true;
+      if (this.validateForm()) {
+        let { email, password } = this;
+        this.login({ email, password });
+      }
+    },
+    validateForm() {
+      let result = true;
+      if (this.password === '') {
+        result = false;
+        this.passwordState = false;
+        this.passwordError = 'Please enter password!';
+      }
+      else if (this.password.length <= 6) {
+        result = false;
+        this.passwordState = false;
+        this.passwordError = 'Password has least 6 charactors!';
+      }
+      else {
+        this.passwordState = true;
+        this.passwordError = '';
+      }
+      if (this.email === '') {
+        result = false;
+        this.emailState = false;
+        this.emailError = 'Please enter email!';
+      }
+      else if (!validateEmail(this.email)) {
+        result = false;
+        this.emailState = false;
+        this.emailError = 'Wrong format email!';
+      }
+      else {
+        this.emailState = true;
+        this.emailError = '';
+      }
+      return result;
+    },
+  }
 }
 </script>
