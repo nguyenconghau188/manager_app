@@ -1,14 +1,106 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[18],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Collapses.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/Collapses.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -95,15 +187,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'jumbotrons'
+  name: 'collapses',
+  data: function data() {
+    return {
+      showCollapse: true,
+      text: "\n        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry\n        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor\n        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon\n        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla\n        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore\n        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher\n        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic\n        synth nesciunt you probably haven't heard of them accusamus labore VHS.\n      "
+    };
+  }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=template&id=160500c2&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=template&id=160500c2& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Collapses.vue?vue&type=template&id=4050d03b&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/Collapses.vue?vue&type=template&id=4050d03b& ***!
+  \*************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -125,6 +223,7 @@ var render = function() {
           [
             _c(
               "b-col",
+              { attrs: { cols: "12", md: "6" } },
               [
                 _c(
                   "b-card",
@@ -132,8 +231,7 @@ var render = function() {
                   [
                     _c("div", { attrs: { slot: "header" }, slot: "header" }, [
                       _c("i", { staticClass: "fa fa-align-justify" }),
-                      _vm._v(" "),
-                      _c("strong", [_vm._v(" Bootstrap Jumbotron ")]),
+                      _c("strong", [_vm._v(" Bootstrap Collapse ")]),
                       _vm._v(" "),
                       _c("div", { staticClass: "card-header-actions" }, [
                         _c(
@@ -142,7 +240,7 @@ var render = function() {
                             staticClass: "card-header-action",
                             attrs: {
                               href:
-                                "https://bootstrap-vue.js.org/docs/components/jumbotron",
+                                "https://bootstrap-vue.js.org/docs/components/collapse",
                               rel: "noreferrer noopener",
                               target: "_blank"
                             }
@@ -160,22 +258,57 @@ var render = function() {
                       "div",
                       [
                         _c(
-                          "b-jumbotron",
+                          "b-btn",
                           {
-                            attrs: {
-                              header: "Bootstrap 4",
-                              lead: "Bootstrap 4 Components for Vue.js 2"
-                            }
+                            directives: [
+                              {
+                                name: "b-toggle",
+                                rawName: "v-b-toggle.collapse1",
+                                modifiers: { collapse1: true }
+                              }
+                            ],
+                            attrs: { variant: "primary" }
                           },
+                          [_vm._v("Toggle Collapse")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-collapse",
+                          { staticClass: "mt-2", attrs: { id: "collapse1" } },
                           [
-                            _c("p", [
-                              _vm._v("For more information visit website")
-                            ]),
-                            _vm._v(" "),
                             _c(
-                              "b-btn",
-                              { attrs: { variant: "primary", href: "#" } },
-                              [_vm._v("More Info")]
+                              "b-card",
+                              [
+                                _c("p", { staticClass: "card-text" }, [
+                                  _vm._v("Collapse contents Here")
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "b-btn",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "b-toggle",
+                                        rawName: "v-b-toggle.collapse1_inner",
+                                        modifiers: { collapse1_inner: true }
+                                      }
+                                    ],
+                                    attrs: { size: "sm" }
+                                  },
+                                  [_vm._v("Toggle Inner Collapse")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    staticClass: "mt-2",
+                                    attrs: { id: "collapse1_inner" }
+                                  },
+                                  [_c("b-card", [_vm._v("Hello!")])],
+                                  1
+                                )
+                              ],
+                              1
                             )
                           ],
                           1
@@ -191,6 +324,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "b-col",
+              { attrs: { cols: "12", md: "6" } },
               [
                 _c(
                   "b-card",
@@ -198,51 +332,60 @@ var render = function() {
                   [
                     _c("div", { attrs: { slot: "header" }, slot: "header" }, [
                       _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Collapse ")]),
                       _vm._v(" "),
-                      _c("strong", [_vm._v(" Jumbotron ")]),
-                      _vm._v(" "),
-                      _c("small", [_vm._v("with slots")])
+                      _c("small", [
+                        _vm._v("with "),
+                        _c("code", [_vm._v("v-b-toggle")]),
+                        _vm._v(" directive")
+                      ])
                     ]),
                     _vm._v(" "),
                     _c(
                       "div",
                       [
                         _c(
-                          "b-jumbotron",
+                          "b-btn",
+                          {
+                            directives: [
+                              {
+                                name: "b-toggle",
+                                rawName: "v-b-toggle.collapse2",
+                                modifiers: { collapse2: true }
+                              }
+                            ],
+                            staticClass: "m-1"
+                          },
+                          [_vm._v("Toggle Collapse")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-btn",
+                          {
+                            directives: [
+                              {
+                                name: "b-toggle",
+                                rawName: "v-b-toggle",
+                                value: "collapse2",
+                                expression: "'collapse2'"
+                              }
+                            ],
+                            staticClass: "m-1"
+                          },
+                          [_vm._v("Toggle Collapse")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-collapse",
+                          { attrs: { id: "collapse2" } },
                           [
-                            _c("template", { slot: "header" }, [
+                            _c("b-card", [
                               _vm._v(
-                                "\n                Bootstrap 4\n              "
+                                "\n                I am collapsible content!\n              "
                               )
-                            ]),
-                            _vm._v(" "),
-                            _c("template", { slot: "lead" }, [
-                              _vm._v(
-                                "\n                This is a simple hero unit, a simple jumbotron-style component for\n                calling extra attention to featured content or information.\n              "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("hr", { staticClass: "my-4" }),
-                            _vm._v(" "),
-                            _c("p", [
-                              _vm._v(
-                                "\n                It uses utility classes for typography and spacing to space content\n                out within the larger container.\n              "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "b-btn",
-                              { attrs: { variant: "primary", href: "#" } },
-                              [_vm._v("Do Something")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-btn",
-                              { attrs: { variant: "success", href: "#" } },
-                              [_vm._v("Do Something Else")]
-                            )
+                            ])
                           ],
-                          2
+                          1
                         )
                       ],
                       1
@@ -261,6 +404,7 @@ var render = function() {
           [
             _c(
               "b-col",
+              { attrs: { cols: "12", md: "6" } },
               [
                 _c(
                   "b-card",
@@ -268,46 +412,407 @@ var render = function() {
                   [
                     _c("div", { attrs: { slot: "header" }, slot: "header" }, [
                       _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Collapse ")]),
                       _vm._v(" "),
-                      _c("strong", [_vm._v(" Jumbotron ")]),
-                      _vm._v(" "),
-                      _c("small", [_vm._v("variants")])
+                      _c("small", [
+                        _vm._v("with "),
+                        _c("code", [_vm._v("visibility")])
+                      ])
                     ]),
                     _vm._v(" "),
                     _c(
                       "div",
                       [
                         _c(
-                          "b-jumbotron",
+                          "b-btn",
                           {
-                            attrs: {
-                              "bg-variant": "info",
-                              "text-variant": "white",
-                              "border-variant": "dark"
-                            }
+                            directives: [
+                              {
+                                name: "b-toggle",
+                                rawName: "v-b-toggle.collapse3",
+                                modifiers: { collapse3: true }
+                              }
+                            ],
+                            staticClass: "m-1"
                           },
+                          [_vm._v("Toggle Collapse")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-collapse",
+                          { attrs: { visible: "", id: "collapse3" } },
                           [
-                            _c("template", { slot: "header" }, [
+                            _c("b-card", [
                               _vm._v(
-                                "\n                Bootstrap 4\n              "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("template", { slot: "lead" }, [
-                              _vm._v(
-                                "\n                This is a simple hero unit, a simple jumbotron-style component for\n                calling extra attention to featured content or information.\n              "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("hr", { staticClass: "my-4" }),
-                            _vm._v(" "),
-                            _c("p", [
-                              _vm._v(
-                                "\n                It uses utility classes for typography and spacing to space content\n                out within the larger container.\n              "
+                                "\n                I should start open!\n              "
                               )
                             ])
                           ],
-                          2
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Collapse ")]),
+                      _vm._v(" "),
+                      _c("small", [
+                        _vm._v("with "),
+                        _c("code", [_vm._v("v-model")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-btn",
+                          {
+                            class: _vm.showCollapse ? "collapsed" : null,
+                            attrs: {
+                              "aria-controls": "collapse4",
+                              "aria-expanded": _vm.showCollapse
+                                ? "true"
+                                : "false"
+                            },
+                            on: {
+                              click: function($event) {
+                                _vm.showCollapse = !_vm.showCollapse
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n              Toggle Collapse\n            "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-collapse",
+                          {
+                            staticClass: "mt-2",
+                            attrs: { id: "collapse4" },
+                            model: {
+                              value: _vm.showCollapse,
+                              callback: function($$v) {
+                                _vm.showCollapse = $$v
+                              },
+                              expression: "showCollapse"
+                            }
+                          },
+                          [
+                            _c("b-card", [
+                              _vm._v(
+                                "\n                I should start open!\n              "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "b-row",
+          [
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Collapse ")]),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("multiple elements")])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-btn",
+                          {
+                            directives: [
+                              {
+                                name: "b-toggle",
+                                rawName: "v-b-toggle.collapseA.collapseB",
+                                modifiers: { collapseA: true, collapseB: true }
+                              }
+                            ]
+                          },
+                          [_vm._v("Toggle Both Collapse A and B")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-collapse",
+                          { staticClass: "mt-2", attrs: { id: "collapseA" } },
+                          [
+                            _c("b-card", [
+                              _vm._v(
+                                "\n                I am collapsable content A!\n              "
+                              )
+                            ])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-collapse",
+                          { staticClass: "mt-2", attrs: { id: "collapseB" } },
+                          [
+                            _c("b-card", [
+                              _vm._v(
+                                "\n                I am collapsable content B!\n              "
+                              )
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Collapse ")]),
+                      _vm._v(" "),
+                      _c("small", [
+                        _c("code", [_vm._v("accordion")]),
+                        _vm._v(" support")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { attrs: { role: "tablist" } },
+                      [
+                        _c(
+                          "b-card",
+                          { staticClass: "mb-1", attrs: { "no-body": "" } },
+                          [
+                            _c(
+                              "b-card-header",
+                              {
+                                staticClass: "p-1",
+                                attrs: { "header-tag": "header", role: "tab" }
+                              },
+                              [
+                                _c(
+                                  "b-btn",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "b-toggle",
+                                        rawName: "v-b-toggle.accordion1",
+                                        modifiers: { accordion1: true }
+                                      }
+                                    ],
+                                    attrs: {
+                                      block: "",
+                                      href: "#",
+                                      variant: "info"
+                                    }
+                                  },
+                                  [_vm._v("Accordion 1")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-collapse",
+                              {
+                                attrs: {
+                                  id: "accordion1",
+                                  visible: "",
+                                  accordion: "my-accordion",
+                                  role: "tabpanel"
+                                }
+                              },
+                              [
+                                _c("b-card-body", [
+                                  _c("p", { staticClass: "card-text" }, [
+                                    _vm._v(
+                                      "\n                    I start opened because "
+                                    ),
+                                    _c("code", [_vm._v("visible")]),
+                                    _vm._v(" is "),
+                                    _c("code", [_vm._v("true")])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "card-text" }, [
+                                    _vm._v(
+                                      "\n                    " +
+                                        _vm._s(_vm.text) +
+                                        "\n                  "
+                                    )
+                                  ])
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-card",
+                          { staticClass: "mb-1", attrs: { "no-body": "" } },
+                          [
+                            _c(
+                              "b-card-header",
+                              {
+                                staticClass: "p-1",
+                                attrs: { "header-tag": "header", role: "tab" }
+                              },
+                              [
+                                _c(
+                                  "b-btn",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "b-toggle",
+                                        rawName: "v-b-toggle.accordion2",
+                                        modifiers: { accordion2: true }
+                                      }
+                                    ],
+                                    attrs: {
+                                      block: "",
+                                      href: "#",
+                                      variant: "info"
+                                    }
+                                  },
+                                  [_vm._v("Accordion 2")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-collapse",
+                              {
+                                attrs: {
+                                  id: "accordion2",
+                                  accordion: "my-accordion",
+                                  role: "tabpanel"
+                                }
+                              },
+                              [
+                                _c("b-card-body", [
+                                  _c("p", { staticClass: "card-text" }, [
+                                    _vm._v(
+                                      "\n                    " +
+                                        _vm._s(_vm.text) +
+                                        "\n                  "
+                                    )
+                                  ])
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-card",
+                          { staticClass: "mb-1", attrs: { "no-body": "" } },
+                          [
+                            _c(
+                              "b-card-header",
+                              {
+                                staticClass: "p-1",
+                                attrs: { "header-tag": "header", role: "tab" }
+                              },
+                              [
+                                _c(
+                                  "b-btn",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "b-toggle",
+                                        rawName: "v-b-toggle.accordion3",
+                                        modifiers: { accordion3: true }
+                                      }
+                                    ],
+                                    attrs: {
+                                      block: "",
+                                      href: "#",
+                                      variant: "info"
+                                    }
+                                  },
+                                  [_vm._v("Accordion 3")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-collapse",
+                              {
+                                attrs: {
+                                  id: "accordion3",
+                                  accordion: "my-accordion",
+                                  role: "tabpanel"
+                                }
+                              },
+                              [
+                                _c("b-card-body", [
+                                  _c("p", { staticClass: "card-text" }, [
+                                    _vm._v(
+                                      "\n                    " +
+                                        _vm._s(_vm.text) +
+                                        "\n                  "
+                                    )
+                                  ])
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
                         )
                       ],
                       1
@@ -332,17 +837,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/base/Jumbotrons.vue":
-/*!*************************************************************!*\
-  !*** ./resources/assets/js/admin/views/base/Jumbotrons.vue ***!
-  \*************************************************************/
+/***/ "./resources/assets/js/admin/views/base/Collapses.vue":
+/*!************************************************************!*\
+  !*** ./resources/assets/js/admin/views/base/Collapses.vue ***!
+  \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Jumbotrons_vue_vue_type_template_id_160500c2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Jumbotrons.vue?vue&type=template&id=160500c2& */ "./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=template&id=160500c2&");
-/* harmony import */ var _Jumbotrons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Jumbotrons.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Collapses_vue_vue_type_template_id_4050d03b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Collapses.vue?vue&type=template&id=4050d03b& */ "./resources/assets/js/admin/views/base/Collapses.vue?vue&type=template&id=4050d03b&");
+/* harmony import */ var _Collapses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Collapses.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/base/Collapses.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -352,9 +857,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Jumbotrons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Jumbotrons_vue_vue_type_template_id_160500c2___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Jumbotrons_vue_vue_type_template_id_160500c2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Collapses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Collapses_vue_vue_type_template_id_4050d03b___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Collapses_vue_vue_type_template_id_4050d03b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -364,38 +869,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/assets/js/admin/views/base/Jumbotrons.vue"
+component.options.__file = "resources/assets/js/admin/views/base/Collapses.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/assets/js/admin/views/base/Collapses.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/base/Collapses.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotrons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Jumbotrons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotrons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Collapses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Collapses.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Collapses.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Collapses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=template&id=160500c2&":
-/*!********************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=template&id=160500c2& ***!
-  \********************************************************************************************/
+/***/ "./resources/assets/js/admin/views/base/Collapses.vue?vue&type=template&id=4050d03b&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/base/Collapses.vue?vue&type=template&id=4050d03b& ***!
+  \*******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotrons_vue_vue_type_template_id_160500c2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Jumbotrons.vue?vue&type=template&id=160500c2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Jumbotrons.vue?vue&type=template&id=160500c2&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotrons_vue_vue_type_template_id_160500c2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Collapses_vue_vue_type_template_id_4050d03b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Collapses.vue?vue&type=template&id=4050d03b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Collapses.vue?vue&type=template&id=4050d03b&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Collapses_vue_vue_type_template_id_4050d03b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Jumbotrons_vue_vue_type_template_id_160500c2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Collapses_vue_vue_type_template_id_4050d03b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

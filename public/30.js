@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[30],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -242,200 +242,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'CoreUIIcons'
+  name: 'dropdowns'
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=template&id=1ed06122&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=template&id=2b554ef1&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=template&id=1ed06122& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=template&id=2b554ef1& ***!
   \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -448,1301 +263,868 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "animated fadeIn" },
-    [
-      _c(
-        "b-card",
-        { attrs: { "no-body": "" } },
-        [
-          _c(
-            "b-card-header",
-            [
-              _c("i", { staticClass: "fa fa-picture-o" }),
-              _vm._v("CoreUI Icons "),
-              _c("b-badge", { attrs: { variant: "info" } }, [_vm._v("New")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-header-actions" }, [
+  return _c("div", { staticClass: "wrapper" }, [
+    _c(
+      "div",
+      { staticClass: "animated fadeIn" },
+      [
+        _c(
+          "b-row",
+          [
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
                 _c(
-                  "a",
-                  {
-                    staticClass: "card-header-action",
-                    attrs: {
-                      href: "https://github.com/coreui/coreui-icons",
-                      rel: "noreferrer noopener",
-                      target: "_blank"
-                    }
-                  },
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
                   [
-                    _c("small", { staticClass: "text-muted" }, [
-                      _vm._v("Github")
-                    ])
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Bootstrap Dropdown")]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-header-actions" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "card-header-action",
+                            attrs: {
+                              href:
+                                "https://bootstrap-vue.js.org/docs/components/dropdown",
+                              rel: "noreferrer noopener",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _c("small", { staticClass: "text-muted" }, [
+                              _vm._v("docs")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: { id: "ddown1", text: "Dropdown Button" }
+                          },
+                          [
+                            _c("b-dropdown-item", [_vm._v("First Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", [_vm._v("Second Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", [_vm._v("Third Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-divider"),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", [
+                              _vm._v("Something else here...")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { disabled: "" } }, [
+                              _vm._v("Disabled action")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-buttons",
+                              text: "Dropdown using buttons as menu items"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item-button", [
+                              _vm._v("I'm a button")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("I'm also a button")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "b-dropdown-item-button",
+                              { attrs: { disabled: "" } },
+                              [_vm._v("I'm a button, but disabled!")]
+                            ),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("I don't look like a button, but I am!")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-divider",
+                              text: "Dropdown with divider"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item-button", [
+                              _vm._v("First item")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Second item")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-divider"),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Separated Item")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-header",
+                              text: "Dropdown with header"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-header", [
+                              _vm._v("Dropdown header")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("First item")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Second Item")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
                   ]
                 )
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-card-body",
-            [
-              _c(
-                "b-row",
-                { staticClass: "text-center" },
-                [
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-account-logout icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("account-logout")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-action-redo icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("action-redo")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-action-undo icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("action-undo")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-align-center icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("align-center")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-align-left icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("align-left")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-align-right icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("align-right")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-arrow-bottom icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("arrow-bottom")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-arrow-left icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("arrow-left")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-arrow-right icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("arrow-right")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-arrow-top icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("arrow-top")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-ban icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("ban")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-basket-loaded icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("basket-loaded")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-bell icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("bell")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-bold icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("bold")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-bookmark icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("bookmark")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-briefcase icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("briefcase")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-british-pound icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("british-pound")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-brush icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("brush")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-calculator icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("calculator")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-calendar icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("calendar")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-cart icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("cart")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-chart icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("chart")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-check icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("check")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-chevron-bottom icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("chevron-bottom")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-chevron-left icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("chevron-left")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-chevron-right icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("chevron-right")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-chevron-top icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("chevron-top")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-circle-check icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("circle-check")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-circle-x icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("circle-x")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-cloud icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("cloud")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-cloud-download icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("cloud-download")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-cloud-upload icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("cloud-upload")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-code icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("code")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-cog icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("cog")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-comment-square icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("comment-square")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-credit-card icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("credit-card")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-cursor icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("cursor")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-dashboard icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("dashboard")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-delete icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("delete")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-dollar icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("dollar")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-drop icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("drop")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-envelope-closed icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("envelope-closed")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-envelope-letter icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("envelope-letter")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-envelope-open icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("envelope-open")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-euro icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("euro")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-file icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("file")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-globe icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("globe")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-graph icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("graph")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-home icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("home")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-inbox icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("inbox")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-info icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("info")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-italic icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("italic")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-justify-center icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("justify-center")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-justify-left icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("justify-left")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-justify-right icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("justify-right")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-laptop icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("laptop")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-layers icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("layers")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-lightbulb icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("lightbulb")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-list icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("list")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-location-pin icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("location-pin")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-lock-locked icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("lock-locked")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-lock-unlocked icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("lock-unlocked")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-magnifying-glass icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("magnifying-glass")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-map icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("map")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-monitor icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("monitor")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-moon icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("moon")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-note icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("note")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-options icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("options")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-paperclip icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("paperclip")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-pencil icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("pencil")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-people icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("people")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-phone icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("phone")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-pie-chart icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("pie-chart")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-print icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("print")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-puzzle icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("puzzle")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-rss icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("rss")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-screen-desktop icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("screen-desktop")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-screen-smartphone icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("screen-smartphone")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-settings icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("settings")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-share icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("share")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-shield icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("shield")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-sort-ascending icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("sort-ascending")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-sort-descending icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("sort-descending")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-speech icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("speech")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-speedometer icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("speedometer")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-star icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("star")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-sun icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("sun")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-tablet icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("tablet")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-tags icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("tags")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-task icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("task")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-thumb-down icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("thumb-down")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-thumb-up icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("thumb-up")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-trash icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("trash")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-underline icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("underline")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-user icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("user")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-user-female icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("user-female")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-user-follow icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("user-follow")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "cui-user-unfollow icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("user-unfollow")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-wrench icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("wrench")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-col",
-                    { attrs: { cols: "6", sm: "4", md: "3", xl: "2" } },
-                    [
-                      _c("i", {
-                        staticClass: "cui-yen icons font-2xl d-block mt-4"
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("yen")])
-                    ]
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Dropdown ")]),
+                      _c("small", [_vm._v("positioning")])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-left",
+                              text: "Left align",
+                              variant: "primary"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Something else here")
+                            ])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-right",
+                              right: "",
+                              text: "Right align",
+                              variant: "primary"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Something else here")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-dropup",
+                              dropup: "",
+                              text: "Drop-Up",
+                              variant: "info"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Something else here")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-offset",
+                              offset: "25",
+                              text: "Offset Dropdown"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Something else here")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-split",
+                              split: "",
+                              text: "Split Dropdown"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Something else here...")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "b-row",
+          [
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Dropdown ")]),
+                      _c("small", [_vm._v("hidden caret")])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            attrs: {
+                              variant: "link",
+                              size: "lg",
+                              "no-caret": ""
+                            }
+                          },
+                          [
+                            _c("template", { slot: "button-content" }, [
+                              _vm._v("\n                🔍"),
+                              _c("span", { staticClass: "sr-only" }, [
+                                _vm._v("Search")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                              _vm._v("Something else here...")
+                            ])
+                          ],
+                          2
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Dropdown ")]),
+                      _c("small", [_vm._v("sizing")])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: { id: "ddown-lg", size: "lg", text: "Large" }
+                          },
+                          [
+                            _c("b-dropdown-item-button", [_vm._v("Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Something else here")
+                            ])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-lg-split",
+                              size: "lg",
+                              split: "",
+                              text: "Large Split"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item-button", [_vm._v("Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Something else here...")
+                            ])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: { id: "ddown-sm", size: "sm", text: "Small" }
+                          },
+                          [
+                            _c("b-dropdown-item-button", [_vm._v("Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Something else here...")
+                            ])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-sm-split",
+                              size: "sm",
+                              split: "",
+                              text: "Small Split"
+                            }
+                          },
+                          [
+                            _c("b-dropdown-item-button", [_vm._v("Action")]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Another action")
+                            ]),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Something else here...")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "b-row",
+          [
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Dropdown ")]),
+                      _c("small", [_vm._v("headers and accessibility")])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      [
+                        _c(
+                          "b-dropdown",
+                          {
+                            staticClass: "m-2",
+                            attrs: {
+                              id: "ddown-aria",
+                              text: "Dropdown ARIA",
+                              variant: "primary"
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                attrs: {
+                                  role: "group",
+                                  "aria-lableledby": "header1"
+                                }
+                              },
+                              [
+                                _c(
+                                  "b-dropdown-header",
+                                  { attrs: { id: "header1" } },
+                                  [_vm._v("Groups")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item-button",
+                                  { attrs: { "aria-describedby": "header1" } },
+                                  [_vm._v("Add")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item-button",
+                                  { attrs: { "aria-describedby": "header1" } },
+                                  [_vm._v("Delete")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                attrs: {
+                                  role: "group",
+                                  "aria-lableledby": "header2"
+                                }
+                              },
+                              [
+                                _c(
+                                  "b-dropdown-header",
+                                  { attrs: { id: "header2" } },
+                                  [_vm._v("Users")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item-button",
+                                  { attrs: { "aria-describedby": "header2" } },
+                                  [_vm._v("Add")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item-button",
+                                  { attrs: { "aria-describedby": "header2" } },
+                                  [_vm._v("Delete")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("b-dropdown-divider"),
+                            _vm._v(" "),
+                            _c("b-dropdown-item-button", [
+                              _vm._v("Something "),
+                              _c("strong", [_vm._v("not")]),
+                              _vm._v(" associated with user")
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { cols: "12", md: "6" } },
+              [
+                _c(
+                  "b-card",
+                  { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+                  [
+                    _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                      _c("i", { staticClass: "fa fa-align-justify" }),
+                      _c("strong", [_vm._v(" Dropdown ")]),
+                      _c("small", [_c("code", [_vm._v("variant")])])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_primary",
+                          text: "Primary",
+                          variant: "primary"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_secondary",
+                          text: "Secondary",
+                          variant: "secondary"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_success",
+                          text: "Success",
+                          variant: "success"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_warning",
+                          text: "Warning",
+                          variant: "warning"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_danger",
+                          text: "Danger",
+                          variant: "danger"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_info",
+                          text: "Info",
+                          variant: "info"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_light",
+                          text: "Light",
+                          variant: "light"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_dark",
+                          text: "Dark",
+                          variant: "dark"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-dropdown",
+                      {
+                        staticClass: "m-1",
+                        attrs: {
+                          size: "sm",
+                          id: "ddown_link",
+                          text: "Link",
+                          variant: "link"
+                        }
+                      },
+                      [
+                        _c("b-dropdown-item", [_vm._v("First Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Second Action")]),
+                        _vm._v(" "),
+                        _c("b-dropdown-item", [_vm._v("Third Action")])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1751,17 +1133,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue":
+/***/ "./resources/assets/js/admin/views/buttons/Dropdowns.vue":
 /*!***************************************************************!*\
-  !*** ./resources/assets/js/admin/views/icons/CoreUIIcons.vue ***!
+  !*** ./resources/assets/js/admin/views/buttons/Dropdowns.vue ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CoreUIIcons_vue_vue_type_template_id_1ed06122___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CoreUIIcons.vue?vue&type=template&id=1ed06122& */ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=template&id=1ed06122&");
-/* harmony import */ var _CoreUIIcons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CoreUIIcons.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Dropdowns_vue_vue_type_template_id_2b554ef1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dropdowns.vue?vue&type=template&id=2b554ef1& */ "./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=template&id=2b554ef1&");
+/* harmony import */ var _Dropdowns_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dropdowns.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1771,9 +1153,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CoreUIIcons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CoreUIIcons_vue_vue_type_template_id_1ed06122___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CoreUIIcons_vue_vue_type_template_id_1ed06122___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Dropdowns_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Dropdowns_vue_vue_type_template_id_2b554ef1___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Dropdowns_vue_vue_type_template_id_2b554ef1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1783,38 +1165,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/assets/js/admin/views/icons/CoreUIIcons.vue"
+component.options.__file = "resources/assets/js/admin/views/buttons/Dropdowns.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=script&lang=js&":
+/***/ "./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CoreUIIcons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CoreUIIcons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CoreUIIcons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dropdowns_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Dropdowns.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dropdowns_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=template&id=1ed06122&":
+/***/ "./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=template&id=2b554ef1&":
 /*!**********************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=template&id=1ed06122& ***!
+  !*** ./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=template&id=2b554ef1& ***!
   \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CoreUIIcons_vue_vue_type_template_id_1ed06122___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CoreUIIcons.vue?vue&type=template&id=1ed06122& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/icons/CoreUIIcons.vue?vue&type=template&id=1ed06122&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CoreUIIcons_vue_vue_type_template_id_1ed06122___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dropdowns_vue_vue_type_template_id_2b554ef1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Dropdowns.vue?vue&type=template&id=2b554ef1& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/Dropdowns.vue?vue&type=template&id=2b554ef1&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dropdowns_vue_vue_type_template_id_2b554ef1___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CoreUIIcons_vue_vue_type_template_id_1ed06122___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dropdowns_vue_vue_type_template_id_2b554ef1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

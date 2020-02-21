@@ -1,4 +1,4 @@
-<template>
+<template :key="componentKey">
   <div class="app flex-row align-items-center">
     <div class="container">
       <b-row class="justify-content-center">
@@ -67,8 +67,8 @@
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
-import { validateEmail } from '../../common/commonFunctions';
+import { mapActions, mapGetters } from "vuex";
+import { validateEmail } from '../../shared/utils';
 
 export default {
   name: 'Login',
@@ -81,22 +81,48 @@ export default {
       passwordError: '',
       passwordState: true,
       isSubmited: false,
+      componentKey: 0,
     };
   },
   created() {
     this.forceLogout();
   },
   computed: {
-    ...mapState('user', ['user', 'isLogin']),
+    ...mapGetters({
+      loginIssue: 'user/getLoginIssue',
+      isLogin: 'user/getIsLogin',
+    }),
   },
   methods: {
     ...mapActions('user', ['login', 'forceLogout']),
     handleSubmit() {
       this.isSubmited = true;
       if (this.validateForm()) {
+        this.isSubmited = false;
         let { email, password } = this;
-        this.login({ email, password });
+        this.login({ email, password })
+          .then(() => {
+            if (this.isLogin) {
+              this.$router.push('/');
+            }
+            else {
+              this.password = '';
+              this.makeToast(this.loginIssue, 'danger');
+              this.forceRerender();
+            }
+          });
       }
+    },
+    makeToast(message, variant = null) {
+      console.log('toast');
+      this.$bvToast.toast(message, {
+        title: 'Login Fail',
+        variant: variant,
+        solid: true
+      });
+    },
+    forceRerender() {
+      this.componentKey += 1;
     },
     validateForm() {
       let result = true;
@@ -105,7 +131,7 @@ export default {
         this.passwordState = false;
         this.passwordError = 'Please enter password!';
       }
-      else if (this.password.length <= 6) {
+      else if (this.password.length < 6) {
         result = false;
         this.passwordState = false;
         this.passwordError = 'Password has least 6 charactors!';

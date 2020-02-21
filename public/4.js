@@ -442,6 +442,13 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _coreui_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @coreui/vue */ "./node_modules/@coreui/vue/dist/coreui-vue.esm.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -485,6 +492,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'DefaultHeaderDropdownAccnt',
   components: {
@@ -494,7 +502,23 @@ __webpack_require__.r(__webpack_exports__);
     return {
       itemsCount: 42
     };
-  }
+  },
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapActions"])({
+    forceLogout: 'user/forceLogout'
+  }), {
+    logout: function logout() {
+      var _this = this;
+
+      console.log('logout');
+      this.forceLogout().then(function () {
+        console.log('return login');
+
+        _this.$router.push({
+          'name': 'Login'
+        });
+      });
+    }
+  })
 });
 
 /***/ }),
@@ -1393,7 +1417,7 @@ var render = function() {
         _c("img", {
           staticClass: "navbar-brand-full",
           attrs: {
-            src: "img/brand/logo.svg",
+            src: __webpack_require__(/*! @/assets/img/brand/logo.svg */ "./resources/assets/js/admin/assets/img/brand/logo.svg"),
             width: "89",
             height: "25",
             alt: "CoreUI Logo"
@@ -1403,7 +1427,7 @@ var render = function() {
         _c("img", {
           staticClass: "navbar-brand-minimized",
           attrs: {
-            src: "img/brand/sygnet.svg",
+            src: __webpack_require__(/*! @/assets/img/brand/sygnet.svg */ "./resources/assets/js/admin/assets/img/brand/sygnet.svg"),
             width: "30",
             height: "30",
             alt: "CoreUI Logo"
@@ -1501,10 +1525,13 @@ var render = function() {
       _c("template", { slot: "header" }, [
         _c("img", {
           staticClass: "img-avatar",
-          attrs: { src: "img/avatars/6.jpg", alt: "admin@bootstrapmaster.com" }
+          attrs: {
+            src: __webpack_require__(/*! @/assets/img/avatars/6.jpg */ "./resources/assets/js/admin/assets/img/avatars/6.jpg"),
+            alt: "admin@bootstrapmaster.com"
+          }
         })
       ]),
-      _vm._v("\\\n  "),
+      _vm._v(" "),
       _c(
         "template",
         { slot: "dropdown" },
@@ -1513,60 +1540,6 @@ var render = function() {
             "b-dropdown-header",
             { staticClass: "text-center", attrs: { tag: "div" } },
             [_c("strong", [_vm._v("Account")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-dropdown-item",
-            [
-              _c("i", { staticClass: "fa fa-bell-o" }),
-              _vm._v(" Updates\n      "),
-              _c("b-badge", { attrs: { variant: "info" } }, [
-                _vm._v(_vm._s(_vm.itemsCount))
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-dropdown-item",
-            [
-              _c("i", { staticClass: "fa fa-envelope-o" }),
-              _vm._v(" Messages\n      "),
-              _c("b-badge", { attrs: { variant: "success" } }, [
-                _vm._v(_vm._s(_vm.itemsCount))
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-dropdown-item",
-            [
-              _c("i", { staticClass: "fa fa-tasks" }),
-              _vm._v(" Tasks\n      "),
-              _c("b-badge", { attrs: { variant: "danger" } }, [
-                _vm._v(_vm._s(_vm.itemsCount))
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-dropdown-item",
-            [
-              _c("i", { staticClass: "fa fa-comments" }),
-              _vm._v(" Comments\n      "),
-              _c("b-badge", { attrs: { variant: "warning" } }, [
-                _vm._v(_vm._s(_vm.itemsCount))
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-dropdown-header",
-            { staticClass: "text-center", attrs: { tag: "div" } },
-            [_c("strong", [_vm._v("Settings")])]
           ),
           _vm._v(" "),
           _c("b-dropdown-item", [
@@ -1579,30 +1552,6 @@ var render = function() {
             _vm._v(" Settings")
           ]),
           _vm._v(" "),
-          _c(
-            "b-dropdown-item",
-            [
-              _c("i", { staticClass: "fa fa-usd" }),
-              _vm._v(" Payments\n      "),
-              _c("b-badge", { attrs: { variant: "secondary" } }, [
-                _vm._v(_vm._s(_vm.itemsCount))
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-dropdown-item",
-            [
-              _c("i", { staticClass: "fa fa-file" }),
-              _vm._v(" Projects\n      "),
-              _c("b-badge", { attrs: { variant: "primary" } }, [
-                _vm._v(_vm._s(_vm.itemsCount))
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
           _c("b-dropdown-divider"),
           _vm._v(" "),
           _c("b-dropdown-item", [
@@ -1610,7 +1559,7 @@ var render = function() {
             _vm._v(" Lock Account")
           ]),
           _vm._v(" "),
-          _c("b-dropdown-item", [
+          _c("b-dropdown-item", { on: { click: _vm.logout } }, [
             _c("i", { staticClass: "fa fa-lock" }),
             _vm._v(" Logout")
           ])
@@ -1876,6 +1825,39 @@ __webpack_require__.r(__webpack_exports__);
     }
   }]
 });
+
+/***/ }),
+
+/***/ "./resources/assets/js/admin/assets/img/avatars/6.jpg":
+/*!************************************************************!*\
+  !*** ./resources/assets/js/admin/assets/img/avatars/6.jpg ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/6.jpg?6423e2e662718dd7f20fb7c89b742a9d";
+
+/***/ }),
+
+/***/ "./resources/assets/js/admin/assets/img/brand/logo.svg":
+/*!*************************************************************!*\
+  !*** ./resources/assets/js/admin/assets/img/brand/logo.svg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo.svg?f7eb9aeadcf6dec16ce1df324c046dbc";
+
+/***/ }),
+
+/***/ "./resources/assets/js/admin/assets/img/brand/sygnet.svg":
+/*!***************************************************************!*\
+  !*** ./resources/assets/js/admin/assets/img/brand/sygnet.svg ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/sygnet.svg?876b450384ce60a3292bcf94603bff12";
 
 /***/ }),
 

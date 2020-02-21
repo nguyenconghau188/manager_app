@@ -1,4 +1,5 @@
 import userServices from '../../services/userServices';
+import routes from '../../router/index';
 
 const state = {
   user: {},
@@ -8,6 +9,7 @@ const state = {
 };
 
 const getters = {
+  getToken: state => state.token,
   getUser: state => state.user,
   getIsLogin: state => state.isLogin,
   getLoginIssue: state => state.loginIssue,
@@ -15,17 +17,34 @@ const getters = {
 
 const actions = {
   login(context, obj) {
-    userServices.login(obj)
-      .then(res => {
+    return userServices.login(obj)
+      .then(
+      res => {
         context.commit('setUser', res.data.data.user);
         context.commit('setIsLogin', true);
+        context.commit('setLoginIssue', localStorage.getItem('loginIssue'));
+        routes.push({ name: 'Dashboard' });
       },
       error => {
-        window.location.reload();
+        console.log('setLoginIssue');
+        context.commit('setIsLogin', false);
+        context.commit('setLoginIssue', localStorage.getItem('loginIssue'));
       });
   },
   forceLogout() {
-    userServices.forceLogout();
+    console.log('force logout begin')
+    return userServices.forceLogout()
+      .then(() => {
+        context.commit('setIsLogin', false);
+        context.commit('setLoginIssue', '');
+        context.commit('setToken', '');
+        context.commit('setUser', {});
+        console.log('force logout')
+      });
+  },
+  removeLoginIssue(context) {
+    localStorage.removeItem('loginIssue');
+    context.commit('setLoginIssue', '');
   },
 };
 

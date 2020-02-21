@@ -3239,15 +3239,21 @@ render._withStripped = true
 /*!***************************************************!*\
   !*** ./resources/assets/js/admin/shared/utils.js ***!
   \***************************************************/
-/*! exports provided: random, shuffleArray */
+/*! exports provided: random, validateEmail, shuffleArray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "random", function() { return random; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "validateEmail", function() { return validateEmail; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shuffleArray", function() { return shuffleArray; });
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
+} // function validate email
+
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
 }
 /**
  * Randomize array element order in-place.

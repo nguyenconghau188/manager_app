@@ -32,14 +32,14 @@ const userServices = {
         method: 'POST',
       })
       .then(res => {
-          const token = res.data.data.token;
-          const user = res.data.data.user;
-          localStorage.setItem('token', token);
-          localStorage.setItem('user', JSON.stringify(user));
-          localStorage.removeItem('loginIssue');
-          axios.defaults.headers.common['Authorization'] = token;
-          
-          resolve(res);
+        const token = res.data.data.token;
+        const user = res.data.data.user;
+        localStorage.setItem('token', token);
+        localStorage.setItem('user', JSON.stringify(user));
+        localStorage.removeItem('loginIssue');
+        axios.defaults.headers.common['Authorization'] = token;
+        
+        resolve(res);
       })
       .catch(err => {
         localStorage.removeItem('token');
