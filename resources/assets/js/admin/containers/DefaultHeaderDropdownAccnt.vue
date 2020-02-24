@@ -43,6 +43,7 @@
 <script>
 import { HeaderDropdown as AppHeaderDropdown } from '@coreui/vue'
 import { mapActions } from 'vuex';
+
 export default {
   name: 'DefaultHeaderDropdownAccnt',
   components: {
@@ -58,11 +59,21 @@ export default {
       forceLogout: 'user/forceLogout',
     }),
     logout() {
-      console.log('logout')
-      this.forceLogout()
-      .then(() => {
-        console.log('return login')
-        this.$router.push({'name': 'Login'});
+      this.$swal({
+          text: 'Are you sure want to logout?',
+          icon: 'warning',
+          confirmButtonText: 'Yes',
+          showCancelButton: true,
+          cancelButtonText: 'No'
+      })
+      .then(rs => {
+        if (rs.value) {
+          this.forceLogout()
+          .then(() => {
+            console.log('return login')
+            this.$router.push({'name': 'Login'});
+          });
+        }
       });
     }
   }

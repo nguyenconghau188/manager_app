@@ -30,7 +30,8 @@
         "vue": "^2.6.10",
         "vue-chartjs": "^3.4.2",
         "vue-perfect-scrollbar": "^0.1.0",
-        "vue-router": "^3.0.6"
+        "vue-router": "^3.0.6",
+        "vue-sweetalert2": "^3.0.3"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^3.8.0",
@@ -45,6 +46,7 @@
         "cross-env": "^5.1",
         "growl": "^1.10.5",
         "https-proxy-agent": "^2.2.1",
+        "jquery-confirm": "^3.3.4",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "node-sass": "^4.12.0",

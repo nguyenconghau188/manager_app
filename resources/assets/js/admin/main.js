@@ -11,11 +11,13 @@ import App from './App'
 import router from './router'
 import store from './store'
 import Axios from 'axios';
+import VueSweetAlert2 from 'vue-sweetalert2';
 
 // todo
 // cssVars()
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
+Vue.use(VueSweetAlert2);
 
 /* eslint-disable no-new */
 new Vue({

@@ -26,20 +26,17 @@ const actions = {
         routes.push({ name: 'Dashboard' });
       },
       error => {
-        console.log('setLoginIssue');
         context.commit('setIsLogin', false);
         context.commit('setLoginIssue', localStorage.getItem('loginIssue'));
       });
   },
-  forceLogout() {
-    console.log('force logout begin')
+  forceLogout(context) {
     return userServices.forceLogout()
       .then(() => {
         context.commit('setIsLogin', false);
         context.commit('setLoginIssue', '');
         context.commit('setToken', '');
         context.commit('setUser', {});
-        console.log('force logout')
       });
   },
   removeLoginIssue(context) {

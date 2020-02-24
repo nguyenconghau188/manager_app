@@ -3,9 +3,10 @@ import config from '../constants/config';
 
 const userServices = {
   forceLogout() {
-    return new Promise(() => {
+    return new Promise((resolve, reject) => {
       localStorage.removeItem('token');
       localStorage.removeItem('user');
+      resolve();
     });
   },
   // handleResponse(response) {
@@ -24,7 +25,6 @@ const userServices = {
   //   });
   // },
   login(obj) {
-    // console.error(obj);
     return new Promise((resolve, reject) => {
       axios({
         url: `${config.baseUrl}${config.user.loginUrl}`,

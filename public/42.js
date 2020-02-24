@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[4],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[42],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/containers/DefaultAside.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************************!*\
@@ -443,6 +443,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _coreui_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @coreui/vue */ "./node_modules/@coreui/vue/dist/coreui-vue.esm.js");
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var jquery_confirm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery-confirm */ "./node_modules/jquery-confirm/dist/jquery-confirm.min.js");
+/* harmony import */ var jquery_confirm__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_confirm__WEBPACK_IMPORTED_MODULE_2__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -493,6 +495,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'DefaultHeaderDropdownAccnt',
   components: {
@@ -507,25 +510,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     forceLogout: 'user/forceLogout'
   }), {
     logout: function logout() {
-      var _this = this;
-
-      this.$swal({
-        text: 'Are you sure want to logout?',
-        icon: 'warning',
-        confirmButtonText: 'Yes',
+      var confirm = this.$swal({
+        text: 'Bạn có chắc chắn muốn xóa?',
+        type: 'warning',
+        confirmButtonText: 'Xóa',
         showCancelButton: true,
-        cancelButtonText: 'No'
-      }).then(function (rs) {
-        if (rs.value) {
-          _this.forceLogout().then(function () {
-            console.log('return login');
-
-            _this.$router.push({
-              'name': 'Login'
-            });
-          });
-        }
+        cancelButtonText: 'Hủy'
       });
+      console.log(confirm); // let confirm = confirm("Do you want logout?");
+      // if (confirm) {
+      //   this.forceLogout()
+      //   .then(() => {
+      //     console.log('return login')
+      //     this.$router.push({'name': 'Login'});
+      //   });
+      // }
     }
   })
 });
