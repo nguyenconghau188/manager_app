@@ -5,6 +5,7 @@
 use App\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use App\Commons\CommonFunctions;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +19,16 @@ use Illuminate\Support\Str;
 */
 
 $factory->define(User::class, function (Faker $faker) {
+    $status = rand(1, 4);
+    $role = rand(1,5);
     return [
+        'id' => CommonFunctions::generateUserId(),
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        'remember_token' => Str::random(10),
+        'email_verified_at' => $status !== 1 ? now() : null,
+        'password' => bcrypt('123456'), // password
+        'role' => $role,
+        'status' => $status,
+        'phone_number' => $faker->unique()->phoneNumber,
     ];
 });

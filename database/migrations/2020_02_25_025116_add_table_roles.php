@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddFieldsForUsers extends Migration
+class AddTableRoles extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class AddFieldsForUsers extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             //
-            $table->integer('role');
-            $table->integer('status');
+            $table->increments('id')->start_from(0);
+            $table->string('name_role')->unique();
+            $table->timestamps();
         });
     }
 
@@ -27,10 +28,6 @@ class AddFieldsForUsers extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-            $table->dropColumn('role');
-            $table->dropColumn('status');
-        });
+        Schema::dropIfExists('roles');
     }
 }

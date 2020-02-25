@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Validator;
 use Illuminate\Support\Facades\Auth; 
+use App\Commons\CommonFunctions;
 
 class UserController extends Controller
 {
@@ -34,12 +35,14 @@ class UserController extends Controller
             'email' => 'required|email',
             'password' => 'required',
             'c_password' => 'required|same:password',
+            'phone_number' => 'regex:/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/',
         ]);
         if ($validator->fails()) {
             return response()->json(['error'=>$validator->errors()], 401);
         }
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
+        $input['id'] = CommonFunction::generateUserId();
         $user = User::create($input);
         $success['token'] = $user->createToken('MyApp')->accessToken;
         $success['name'] = $user->name;
@@ -52,5 +55,13 @@ class UserController extends Controller
     {
         $user = Auth::user();
         return response()->json(['success'=>$user], $this->successStatus);
+    }
+
+    // get users api with paginate
+    public function users($range, $page)
+    {
+        $users = User::paginate(15);
+
+        return response()->json(['success'=>$users], $this->successStatus);
     }
 }
