@@ -22,7 +22,7 @@ $factory->define(User::class, function (Faker $faker) {
     $status = rand(1, 4);
     $role = rand(1,5);
     return [
-        'id' => CommonFunctions::generateUserId(),
+        'uuid' => CommonFunctions::generateUserId(),
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => $status !== 1 ? now() : null,

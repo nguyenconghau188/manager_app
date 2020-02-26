@@ -58,9 +58,9 @@ class UserController extends Controller
     }
 
     // get users api with paginate
-    public function users($range, $page)
+    public function users($range, $page=null)
     {
-        $users = User::paginate(15);
+        $users = User::paginate(15)->url(2);
 
         return response()->json(['success'=>$users], $this->successStatus);
     }

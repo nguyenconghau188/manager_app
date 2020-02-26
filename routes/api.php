@@ -19,6 +19,7 @@ use Illuminate\Http\Request;
 // Route::group(['prefix' => '/admin'],  function() {
     Route::post('login', 'API\UserController@login');
     Route::post('register', 'API\UserController@register');
+    Route::get('request_fail', 'API\UserController@requestFail');
     Route::group(['middleware' => 'auth:api'], function () {
         Route::get('details', 'API\UserController@details');
         Route::get('users/{range}', 'API\UserController@users');

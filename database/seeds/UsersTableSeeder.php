@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
         $user = [CommonFunctions::generateUserId(), 'Nguyen Cong Hau', bcrypt('123456'), 'nguyenconghau188@gmail.com', '2', '2'];
  
         User::create([
-            'id' => $user[0],
+            'uuid' => $user[0],
             'name' => $user[1],
             'password' => $user[2],
             'email' => $user[3],
