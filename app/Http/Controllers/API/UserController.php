@@ -3,14 +3,18 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\User;
+use App\ModelServices\UserServices;
 use Validator;
 use Illuminate\Support\Facades\Auth; 
-use App\Commons\CommonFunctions;
 
 class UserController extends Controller
 {
     public $successStatus = 200;
+    private $userSerivces;
+
+    public function __construct(UserServices $userSerivces) {
+        $this->userSerivces = $userSerivces;
+    }
 
     // login api
     // @return Illuminate\Http\Response;
@@ -41,26 +45,28 @@ class UserController extends Controller
             return response()->json(['error'=>$validator->errors()], 401);
         }
         $input = $request->all();
-        $input['password'] = bcrypt($input['password']);
-        $input['id'] = CommonFunction::generateUserId();
-        $user = User::create($input);
-        $success['token'] = $user->createToken('MyApp')->accessToken;
-        $success['name'] = $user->name;
-
-        return response()->json(['success'=>$success], $this->successStatus);
+        $success = $this->userSerivces->createUser($input);
+        if ($success) {
+            return response()->json(['success'=>$success], $this->successStatus);
+        }
+        return response()->json(['error'=>'Create user error!'], 401);
     }
 
     // details api
     public function details()
     {
-        $user = Auth::user();
-        return response()->json(['success'=>$user], $this->successStatus);
+        $auth = Auth::user();
+        $user = $this->userSerivces->getUser($auth->id);
+        if ($user) {
+            return response()->json(['success'=>$user], $this->successStatus);
+        }
+        return response()->json(['error'=>'User is not available!'], 401);
     }
 
     // get users api with paginate
     public function users($range, $page=null)
     {
-        $users = User::paginate(15)->url(2);
+        $users = User::paginate(15);
 
         return response()->json(['success'=>$users], $this->successStatus);
     }

@@ -6,7 +6,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 
+// class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
 class User extends Authenticatable
 {
     use Notifiable, HasApiTokens;
@@ -37,4 +39,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getRole() 
+    {
+        return $this->hasOne('App\Roles', 'id', 'role');
+    }
+
+    public function getStatus()
+    {
+        return $this->hasOne('App\UserStatus', 'id', 'status');
+    }
 }
