@@ -3,9 +3,17 @@ namespace App\ModelServices;
 
 use App\User;
 use App\Commons\CommonFunctions;
+use App\Commons\Constants;
 
 class UserServices
 {
+
+  private $users;
+
+  public function __construct(User $users) {
+    $this->users = $users;
+  }
+
   public function getUser($userId)
   {
     try {
@@ -30,6 +38,29 @@ class UserServices
       return $rs;
     } catch (\Throwable $th) {
       // throw $th;
+      return false;
+    }
+  }
+
+  public function getUsers()
+  {
+    try {
+      // $users = User::latest()->paginate(Constants::NUM_PER_PAGE);
+      $users = $this->users->users()->paginate(15);
+      $result = [
+        'pagination' => [
+            'total' => $users->total(),
+            'per_page' => $users->perPage(),
+            'current_page' => $users->currentPage(),
+            'last_page' => $users->lastPage(),
+            'from' => $users->firstItem(),
+            'to' => $users->lastItem()
+        ],
+        'data' => $users
+      ];
+      return $result;
+    } catch (\Throwable $th) {
+      //throw $th;
       return false;
     }
   }

@@ -22,6 +22,6 @@ use Illuminate\Http\Request;
     Route::get('request_fail', 'API\UserController@requestFail');
     Route::group(['middleware' => 'auth:api'], function () {
         Route::get('details', 'API\UserController@details');
-        Route::get('users/{range}', 'API\UserController@users');
+        Route::get('users', 'API\UserController@users');
     });
 // });

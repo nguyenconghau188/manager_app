@@ -64,10 +64,13 @@ class UserController extends Controller
     }
 
     // get users api with paginate
-    public function users($range, $page=null)
+    public function users()
     {
-        $users = User::paginate(15);
+        $users = $this->userSerivces->getUsers();
 
-        return response()->json(['success'=>$users], $this->successStatus);
+        if ($users) {
+            return response()->json(['success'=>$users], $this->successStatus);
+        }
+        return response()->json(['error'=>'Error!'], 401);
     }
 }

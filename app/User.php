@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 // class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
 class User extends Authenticatable
@@ -48,5 +49,14 @@ class User extends Authenticatable
     public function getStatus()
     {
         return $this->hasOne('App\UserStatus', 'id', 'status');
+    }
+
+    public function users()
+    {
+        return DB::table('users')
+                    ->join('roles', 'users.role', '=', 'roles.id')
+                    ->join('user_status', 'users.status', '=', 'user_status.id')
+                    ->select('users.*', 'roles.name_role as role_name', 'user_status.status_name as status_name')
+                    ->latest();
     }
 }
