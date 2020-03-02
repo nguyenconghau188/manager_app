@@ -69,7 +69,7 @@ class UserController extends Controller
         $users = $this->userSerivces->getUsers();
 
         if ($users) {
-            return response()->json(['success'=>$users], $this->successStatus);
+            return response()->json(['data'=>$users], $this->successStatus);
         }
         return response()->json(['error'=>'Error!'], 401);
     }

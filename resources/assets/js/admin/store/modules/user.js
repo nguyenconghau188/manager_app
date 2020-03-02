@@ -3,6 +3,9 @@ import routes from '../../router/index';
 
 const state = {
   user: {},
+  users: [],
+  pagination: {},
+  current_page: 1,
   token: '',
   isLogin: false,
   loginIssue: '',
@@ -11,6 +14,9 @@ const state = {
 const getters = {
   getToken: state => state.token,
   getUser: state => state.user,
+  getUsers: state => state.users,
+  getCurrentPage: state => state.current_page,
+  getPagination: state => state.pagination,
   getIsLogin: state => state.isLogin,
   getLoginIssue: state => state.loginIssue,
 };
@@ -25,7 +31,7 @@ const actions = {
         context.commit('setLoginIssue', localStorage.getItem('loginIssue'));
         routes.push({ name: 'Dashboard' });
       },
-      error => {
+      err => {
         context.commit('setIsLogin', false);
         context.commit('setLoginIssue', localStorage.getItem('loginIssue'));
       });
@@ -43,11 +49,32 @@ const actions = {
     localStorage.removeItem('loginIssue');
     context.commit('setLoginIssue', '');
   },
+  getUsersPagination(context) {
+    return userServices.getUsersPagination()
+      .then(
+        (res) => {
+          console.log(res.data.data.data.current_page)
+          context.commit('setPagination', res.data.data.pagination);
+          context.commit('setUsers', res.data.data.data.data);
+          context.commit('setCurrentPage', res.data.data.data.current_page);
+        },
+        (err) => {
+          this.$swal(
+            'ERROR',
+            'Can not loading. Please try again!',
+            'warning',
+          );
+        }
+      );
+  },
 };
 
 const mutations = {
   setUser(state, user) {
     state.user = user;
+  },
+  setUsers(state, users) {
+    state.users = users;
   },
   setToken(state, token) {
     state.token = token;
@@ -58,6 +85,12 @@ const mutations = {
   setLoginIssue(state, issue) {
     state.loginIssue = issue;
   },
+  setPagination(state, pagination) {
+    state.pagination = pagination;
+  },
+  setCurrentPage(state, page) {
+    state.current_page = page;
+  }
 };
 
 export default {

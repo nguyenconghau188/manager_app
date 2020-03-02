@@ -50,6 +50,21 @@ const userServices = {
       });
     });
   },
+  getUsersPagination() {
+    return new Promise((resolve, reject) => {
+      axios({
+        url: `${config.baseUrl}${config.user.usersPaginationUrl}`,
+        method: 'GET',
+      })
+      .then(
+        res => {
+          resolve(res);
+      })
+      .catch(error => {
+        reject(error);
+      });
+    });
+  },
 }
 
 export default userServices;

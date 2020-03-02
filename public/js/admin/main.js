@@ -80501,7 +80501,8 @@ var config = {
   publicPages: ['/login', '/register'],
   baseUrl: 'http://localhost:8000',
   user: {
-    loginUrl: '/api/login'
+    loginUrl: '/api/login',
+    usersPaginationUrl: '/api/users'
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (config);
@@ -80565,7 +80566,7 @@ vue__WEBPACK_IMPORTED_MODULE_3__["default"].prototype.$http = axios__WEBPACK_IMP
 var token = localStorage.getItem('token');
 
 if (token) {
-  vue__WEBPACK_IMPORTED_MODULE_3__["default"].prototype.$http.defaults.headers.common['Authorization'] = token;
+  vue__WEBPACK_IMPORTED_MODULE_3__["default"].prototype.$http.defaults.headers.common['Authorization'] = 'Bearer ' + token;
 }
 
 /***/ }),
@@ -81081,6 +81082,18 @@ var userServices = {
         reject(err);
       });
     });
+  },
+  getUsersPagination: function getUsersPagination() {
+    return new Promise(function (resolve, reject) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default()({
+        url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__["default"].baseUrl).concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__["default"].user.usersPaginationUrl),
+        method: 'GET'
+      }).then(function (res) {
+        resolve(res);
+      }).catch(function (error) {
+        reject(error);
+      });
+    });
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (userServices);
@@ -81127,6 +81140,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var state = {
   user: {},
+  users: [],
+  pagination: {},
+  current_page: 1,
   token: '',
   isLogin: false,
   loginIssue: ''
@@ -81137,6 +81153,15 @@ var getters = {
   },
   getUser: function getUser(state) {
     return state.user;
+  },
+  getUsers: function getUsers(state) {
+    return state.users;
+  },
+  getCurrentPage: function getCurrentPage(state) {
+    return state.current_page;
+  },
+  getPagination: function getPagination(state) {
+    return state.pagination;
   },
   getIsLogin: function getIsLogin(state) {
     return state.isLogin;
@@ -81154,7 +81179,7 @@ var actions = {
       _router_index__WEBPACK_IMPORTED_MODULE_1__["default"].push({
         name: 'Dashboard'
       });
-    }, function (error) {
+    }, function (err) {
       context.commit('setIsLogin', false);
       context.commit('setLoginIssue', localStorage.getItem('loginIssue'));
     });
@@ -81170,11 +81195,26 @@ var actions = {
   removeLoginIssue: function removeLoginIssue(context) {
     localStorage.removeItem('loginIssue');
     context.commit('setLoginIssue', '');
+  },
+  getUsersPagination: function getUsersPagination(context) {
+    var _this = this;
+
+    return _services_userServices__WEBPACK_IMPORTED_MODULE_0__["default"].getUsersPagination().then(function (res) {
+      console.log(res.data.data.data.current_page);
+      context.commit('setPagination', res.data.data.pagination);
+      context.commit('setUsers', res.data.data.data.data);
+      context.commit('setCurrentPage', res.data.data.data.current_page);
+    }, function (err) {
+      _this.$swal('ERROR', 'Can not loading. Please try again!', 'warning');
+    });
   }
 };
 var mutations = {
   setUser: function setUser(state, user) {
     state.user = user;
+  },
+  setUsers: function setUsers(state, users) {
+    state.users = users;
   },
   setToken: function setToken(state, token) {
     state.token = token;
@@ -81184,6 +81224,12 @@ var mutations = {
   },
   setLoginIssue: function setLoginIssue(state, issue) {
     state.loginIssue = issue;
+  },
+  setPagination: function setPagination(state, pagination) {
+    state.pagination = pagination;
+  },
+  setCurrentPage: function setCurrentPage(state, page) {
+    state.current_page = page;
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
