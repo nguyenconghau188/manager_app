@@ -80502,7 +80502,7 @@ var config = {
   baseUrl: 'http://localhost:8000',
   user: {
     loginUrl: '/api/login',
-    usersPaginationUrl: '/api/users'
+    usersPaginationUrl: '/api/users?page='
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (config);
@@ -80614,11 +80614,11 @@ var Widgets = function Widgets() {
 
 
 var Cards = function Cards() {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! @/views/base/Cards */ "./resources/assets/js/admin/views/base/Cards.vue"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @/views/base/Cards */ "./resources/assets/js/admin/views/base/Cards.vue"));
 };
 
 var Forms = function Forms() {
-  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! @/views/base/Forms */ "./resources/assets/js/admin/views/base/Forms.vue"));
+  return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! @/views/base/Forms */ "./resources/assets/js/admin/views/base/Forms.vue"));
 };
 
 var Switches = function Switches() {
@@ -80679,7 +80679,7 @@ var Tooltips = function Tooltips() {
 
 
 var StandardButtons = function StandardButtons() {
-  return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! @/views/buttons/StandardButtons */ "./resources/assets/js/admin/views/buttons/StandardButtons.vue"));
+  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @/views/buttons/StandardButtons */ "./resources/assets/js/admin/views/buttons/StandardButtons.vue"));
 };
 
 var ButtonGroups = function ButtonGroups() {
@@ -80691,7 +80691,7 @@ var Dropdowns = function Dropdowns() {
 };
 
 var BrandButtons = function BrandButtons() {
-  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @/views/buttons/BrandButtons */ "./resources/assets/js/admin/views/buttons/BrandButtons.vue"));
+  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! @/views/buttons/BrandButtons */ "./resources/assets/js/admin/views/buttons/BrandButtons.vue"));
 }; // Views - Icons
 
 
@@ -80743,7 +80743,7 @@ var Register = function Register() {
 
 
 var Users = function Users() {
-  return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @/views/users/Users */ "./resources/assets/js/admin/views/users/Users.vue"));
+  return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! @/views/users/Users */ "./resources/assets/js/admin/views/users/Users.vue"));
 };
 
 var User = function User() {
@@ -81083,10 +81083,10 @@ var userServices = {
       });
     });
   },
-  getUsersPagination: function getUsersPagination() {
+  getUsersPagination: function getUsersPagination(page) {
     return new Promise(function (resolve, reject) {
       axios__WEBPACK_IMPORTED_MODULE_0___default()({
-        url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__["default"].baseUrl).concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__["default"].user.usersPaginationUrl),
+        url: "".concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__["default"].baseUrl).concat(_constants_config__WEBPACK_IMPORTED_MODULE_1__["default"].user.usersPaginationUrl).concat(page),
         method: 'GET'
       }).then(function (res) {
         resolve(res);
@@ -81145,7 +81145,8 @@ var state = {
   current_page: 1,
   token: '',
   isLogin: false,
-  loginIssue: ''
+  loginIssue: '',
+  loadingIssue: ''
 };
 var getters = {
   getToken: function getToken(state) {
@@ -81168,6 +81169,9 @@ var getters = {
   },
   getLoginIssue: function getLoginIssue(state) {
     return state.loginIssue;
+  },
+  getLoadingIssue: function getLoadingIssue(state) {
+    return state.loadingIssue;
   }
 };
 var actions = {
@@ -81196,16 +81200,14 @@ var actions = {
     localStorage.removeItem('loginIssue');
     context.commit('setLoginIssue', '');
   },
-  getUsersPagination: function getUsersPagination(context) {
-    var _this = this;
-
-    return _services_userServices__WEBPACK_IMPORTED_MODULE_0__["default"].getUsersPagination().then(function (res) {
-      console.log(res.data.data.data.current_page);
+  getUsersPagination: function getUsersPagination(context, page) {
+    return _services_userServices__WEBPACK_IMPORTED_MODULE_0__["default"].getUsersPagination(page).then(function (res) {
       context.commit('setPagination', res.data.data.pagination);
       context.commit('setUsers', res.data.data.data.data);
       context.commit('setCurrentPage', res.data.data.data.current_page);
+      context.commit('setLoadingIssue', '');
     }, function (err) {
-      _this.$swal('ERROR', 'Can not loading. Please try again!', 'warning');
+      context.commit('setLoadingIssue', 'Can not loading. Please try again!');
     });
   }
 };
@@ -81230,6 +81232,9 @@ var mutations = {
   },
   setCurrentPage: function setCurrentPage(state, page) {
     state.current_page = page;
+  },
+  setLoadingIssue: function setLoadingIssue(state, issue) {
+    state.loadingIssue = issue;
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({

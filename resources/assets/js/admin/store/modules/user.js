@@ -9,6 +9,7 @@ const state = {
   token: '',
   isLogin: false,
   loginIssue: '',
+  loadingIssue: '',
 };
 
 const getters = {
@@ -19,6 +20,7 @@ const getters = {
   getPagination: state => state.pagination,
   getIsLogin: state => state.isLogin,
   getLoginIssue: state => state.loginIssue,
+  getLoadingIssue: state => state.loadingIssue,
 };
 
 const actions = {
@@ -49,21 +51,17 @@ const actions = {
     localStorage.removeItem('loginIssue');
     context.commit('setLoginIssue', '');
   },
-  getUsersPagination(context) {
-    return userServices.getUsersPagination()
+  getUsersPagination(context, page) {
+    return userServices.getUsersPagination(page)
       .then(
         (res) => {
-          console.log(res.data.data.data.current_page)
           context.commit('setPagination', res.data.data.pagination);
           context.commit('setUsers', res.data.data.data.data);
           context.commit('setCurrentPage', res.data.data.data.current_page);
+          context.commit('setLoadingIssue', '');
         },
         (err) => {
-          this.$swal(
-            'ERROR',
-            'Can not loading. Please try again!',
-            'warning',
-          );
+          context.commit('setLoadingIssue', 'Can not loading. Please try again!');
         }
       );
   },
@@ -90,7 +88,10 @@ const mutations = {
   },
   setCurrentPage(state, page) {
     state.current_page = page;
-  }
+  },
+  setLoadingIssue(state, issue) {
+    state.loadingIssue = issue;
+  },
 };
 
 export default {

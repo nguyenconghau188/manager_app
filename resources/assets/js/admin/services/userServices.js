@@ -50,10 +50,10 @@ const userServices = {
       });
     });
   },
-  getUsersPagination() {
+  getUsersPagination(page) {
     return new Promise((resolve, reject) => {
       axios({
-        url: `${config.baseUrl}${config.user.usersPaginationUrl}`,
+        url: `${config.baseUrl}${config.user.usersPaginationUrl}${page}`,
         method: 'GET',
       })
       .then(

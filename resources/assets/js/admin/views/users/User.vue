@@ -5,10 +5,7 @@
         <template slot="header">
           User id:  {{ $route.params.id }}
         </template>
-        <b-table striped small fixed responsive="sm" :items="items($route.params.id)" :fields="fields">
-          <template slot="value" slot-scope="data">
-            <strong>{{data.item.value}}</strong>
-          </template>
+        <b-table striped small fixed responsive="sm" :items="items" fields=":fields">
         </b-table>
         <template slot="footer">
           <b-button @click="goBack">Back</b-button>
@@ -19,7 +16,8 @@
 </template>
 
 <script>
-import usersData from './UsersData'
+import { mapGetters, mapActions } from "vuex";
+
 export default {
   name: 'User',
   props: {
@@ -30,16 +28,26 @@ export default {
   },
   data: () => {
     return {
-      items: (id) => {
-        const user = usersData.find( user => user.id.toString() === id)
-        const userDetails = user ? Object.entries(user) : [['id', 'Not found']]
-        return userDetails.map(([key, value]) => {return {key: key, value: value}})
-      },
       fields: [
         {key: 'key'},
         {key: 'value'},
       ],
+      items: {},
     }
+  },
+  computed: {
+    ...mapGetters({
+      users: 'user/getUsers',
+    }),
+  },
+  mounted() {
+    let id = this.$route.params.id;
+    console.log(id)
+    const user = this.users.find(user => user.uuid === id);
+    const userDetails = user ? Object.entries(user) : [['uuid', 'Not found']]
+    this.items = userDetails.map(([key, value]) => {return {key: key, value: value}})
+                  
+    console.log(this.items)
   },
   methods: {
     goBack() {

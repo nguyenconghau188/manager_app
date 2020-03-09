@@ -1,14 +1,407 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[12],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -297,15 +690,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'brand-buttons'
+  name: 'standard-buttons',
+  data: function data() {
+    return {
+      togglePress: false
+    };
+  }
 });
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -314,22 +712,22 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "\n.btn[data-v-2119ed4a] {\n  margin-bottom: 4px;\n}\n", ""]);
+exports.push([module.i, "\n.btn.disabled[data-v-27be5c33] {\n  cursor: auto;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css&":
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--6-1!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css&");
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--6-1!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -351,10 +749,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true&":
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true& ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -371,2434 +769,3776 @@ var render = function() {
     { staticClass: "animated fadeIn" },
     [
       _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("Standard buttons")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c(
+                "b-row",
+                { staticClass: "align-items-center" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Normal\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "primary" } },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "secondary" } },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "success" } },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "warning" } },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "danger" } },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "info" } },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "light" } },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "dark" } },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "link" } },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Active State\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "primary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "secondary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "success",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "warning",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "danger",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "info",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "light",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "dark",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "link",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Disabled\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: { block: "", variant: "primary", disabled: "" }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "secondary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: { block: "", variant: "success", disabled: "" }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: { block: "", variant: "warning", disabled: "" }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: { block: "", variant: "danger", disabled: "" }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "info", disabled: "" } },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: { block: "", variant: "light", disabled: "" }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "dark", disabled: "" } },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "link", disabled: "" } },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("Outline Buttons")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c("p", [
+                _vm._v("\n        Use "),
+                _c("code", [_vm._v('variant="outline-*"')]),
+                _vm._v(" prop\n      ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Normal\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-primary" } },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-secondary" } },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-success" } },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-warning" } },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-danger" } },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-info" } },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-light" } },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "outline-dark" } },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-col", {
+                    staticClass: "mb-3 mb-xl-0",
+                    attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Active State\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-primary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-secondary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-success",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-warning",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-danger",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-info",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-light",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "outline-dark",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-col", {
+                    staticClass: "mb-3 mb-xl-0",
+                    attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Disabled\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-primary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-secondary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-success",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-warning",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-danger",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-info",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-light",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "outline-dark",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-col", {
+                    staticClass: "mb-3 mb-xl-0",
+                    attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("Ghost Buttons")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c("p", [
+                _vm._v("\n        Use\n        "),
+                _c("code", [_vm._v(".btn-ghost-*")]),
+                _vm._v(" class for ghost buttons.\n      ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Normal\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-primary" } },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-secondary" } },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-success" } },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-warning" } },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-danger" } },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-info" } },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-light" } },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { block: "", variant: "ghost-dark" } },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-col", {
+                    staticClass: "mb-3 mb-xl-0",
+                    attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Active State\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-primary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-secondary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-success",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-warning",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-danger",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-info",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-light",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            pressed: "",
+                            variant: "ghost-dark",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-col", {
+                    staticClass: "mb-3 mb-xl-0",
+                    attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Disabled\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-primary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-secondary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-success",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-warning",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-danger",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-info",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-light",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          attrs: {
+                            block: "",
+                            variant: "ghost-dark",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("b-col", {
+                    staticClass: "mb-3 mb-xl-0",
+                    attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("Square Buttons")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c("p", [
+                _vm._v("\n        Use\n        "),
+                _c("code", [_vm._v(".btn-square")]),
+                _vm._v(" class for square buttons.\n      ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Normal\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "primary" }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "secondary" }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "success" }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "warning" }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "danger" }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "info" }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "light" }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "dark" }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "link" }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Active State\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "primary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "secondary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "success",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "warning",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "danger",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "info",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "light",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "dark",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "link",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Disabled\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "primary", disabled: "" }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: {
+                            block: "",
+                            variant: "secondary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "success", disabled: "" }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "warning", disabled: "" }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "danger", disabled: "" }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "info", disabled: "" }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "light", disabled: "" }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "dark", disabled: "" }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { block: "", variant: "link", disabled: "" }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("Pill Buttons")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c("p", [
+                _vm._v("\n        Use\n        "),
+                _c("code", [_vm._v(".btn-pill")]),
+                _vm._v(" class for pill buttons.\n      ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Normal\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "primary" }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "secondary" }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "success" }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "warning" }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "danger" }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "info" }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "light" }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "dark" }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "link" }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Active State\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "primary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "secondary",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "success",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "warning",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "danger",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "info",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "light",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "dark",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            pressed: "",
+                            block: "",
+                            variant: "link",
+                            "aria-pressed": "true"
+                          }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "12", xl: "" }
+                    },
+                    [_vm._v("\n          Disabled\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "primary", disabled: "" }
+                        },
+                        [_vm._v("Primary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: {
+                            block: "",
+                            variant: "secondary",
+                            disabled: ""
+                          }
+                        },
+                        [_vm._v("Secondary")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "success", disabled: "" }
+                        },
+                        [_vm._v("Success")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "warning", disabled: "" }
+                        },
+                        [_vm._v("Warning")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "danger", disabled: "" }
+                        },
+                        [_vm._v("Danger")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "info", disabled: "" }
+                        },
+                        [_vm._v("Info")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "light", disabled: "" }
+                        },
+                        [_vm._v("Light")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "dark", disabled: "" }
+                        },
+                        [_vm._v("Dark")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "6", sm: "4", md: "2", xl: "" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { block: "", variant: "link", disabled: "" }
+                        },
+                        [_vm._v("Link")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("Sizes")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c("p", [
+                _vm._v("Fancy larger or smaller buttons? Add "),
+                _c("code", [_vm._v('size="lg"')]),
+                _vm._v(" or "),
+                _c("code", [_vm._v('size="sm"')]),
+                _vm._v(" for additional sizes.")
+              ]),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "2", xl: "" }
+                    },
+                    [_vm._v("\n          Small\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "primary", size: "sm" } },
+                        [_vm._v("Standard Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "outline-secondary", size: "sm" } },
+                        [_vm._v("Outline Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { size: "sm", variant: "ghost-success" } },
+                        [_vm._v("Ghost Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { variant: "warning", size: "sm" }
+                        },
+                        [_vm._v("Square Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { variant: "danger", size: "sm" }
+                        },
+                        [_vm._v("Pill Button")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "2", xl: "" }
+                    },
+                    [_vm._v("\n          Normal\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c("b-button", { attrs: { variant: "primary" } }, [
+                        _vm._v("Standard Button")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "outline-secondary" } },
+                        [_vm._v("Outline Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c("b-button", { attrs: { variant: "ghost-success" } }, [
+                        _vm._v("Ghost Button")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { variant: "warning" }
+                        },
+                        [_vm._v("Square Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { variant: "danger" }
+                        },
+                        [_vm._v("Pill Button")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0",
+                      attrs: { cols: "2", xl: "" }
+                    },
+                    [_vm._v("\n          Large\n        ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "primary", size: "lg" } },
+                        [_vm._v("Standard Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "outline-secondary", size: "lg" } },
+                        [_vm._v("Outline Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "ghost-success", size: "lg" } },
+                        [_vm._v("Ghost Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { variant: "warning", size: "lg" }
+                        },
+                        [_vm._v("Square Button")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "mb-3 mb-xl-0 text-center",
+                      attrs: { cols: "2" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { variant: "danger", size: "lg" }
+                        },
+                        [_vm._v("Pill Button")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        { attrs: { "no-body": "" } },
+        [
+          _c("b-card-header", [_c("strong", [_vm._v("With Icons")])]),
+          _vm._v(" "),
+          _c(
+            "b-card-body",
+            [
+              _c(
+                "b-row",
+                { staticClass: "align-items-center mt-3" },
+                [
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "text-center mt-3",
+                      attrs: { sm: "", xs: "12" }
+                    },
+                    [
+                      _c("b-button", { attrs: { variant: "primary" } }, [
+                        _c("i", { staticClass: "fa fa-lightbulb-o" }),
+                        _vm._v(" Standard Button\n          ")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "text-center mt-3",
+                      attrs: { sm: "", xs: "12" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        { attrs: { variant: "secondary", outline: "" } },
+                        [
+                          _c("i", { staticClass: "fa fa-lightbulb-o" }),
+                          _vm._v(" Outline Button\n          ")
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "text-center mt-3",
+                      attrs: { sm: "", xs: "12" }
+                    },
+                    [
+                      _c("b-button", { attrs: { variant: "ghost-success" } }, [
+                        _c("i", { staticClass: "fa fa-lightbulb-o" }),
+                        _vm._v(" Ghost Button\n          ")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "text-center mt-3",
+                      attrs: { sm: "", xs: "12" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-square",
+                          attrs: { variant: "warning" }
+                        },
+                        [
+                          _c("i", { staticClass: "fa fa-lightbulb-o" }),
+                          _vm._v(" Square Button\n          ")
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-col",
+                    {
+                      staticClass: "text-center mt-3",
+                      attrs: { sm: "", xs: "12" }
+                    },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "btn-pill",
+                          attrs: { variant: "danger" }
+                        },
+                        [
+                          _c("i", { staticClass: "fa fa-lightbulb-o" }),
+                          _vm._v(" Pill Button\n          ")
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-card",
+        [
+          _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+            _c("strong", [_vm._v("Toggle pressed state")])
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-row",
+            [
+              _c(
+                "b-col",
+                {
+                  staticClass: "text-center mt-3",
+                  attrs: { sm: "", xs: "12" }
+                },
+                [
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        variant: "outline-primary",
+                        pressed: _vm.togglePress
+                      },
+                      on: {
+                        "update:pressed": function($event) {
+                          _vm.togglePress = $event
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Primary " + _vm._s(_vm.togglePress ? "On " : "Off")
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-col",
+                {
+                  staticClass: "text-center mt-3",
+                  attrs: { sm: "", xs: "12" }
+                },
+                [
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        variant: "outline-secondary",
+                        pressed: _vm.togglePress
+                      },
+                      on: {
+                        "update:pressed": function($event) {
+                          _vm.togglePress = $event
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Secondary " + _vm._s(_vm.togglePress ? "On " : "Off")
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-col",
+                {
+                  staticClass: "text-center mt-3",
+                  attrs: { sm: "", xs: "12" }
+                },
+                [
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        variant: "outline-success",
+                        pressed: _vm.togglePress
+                      },
+                      on: {
+                        "update:pressed": function($event) {
+                          _vm.togglePress = $event
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Success " + _vm._s(_vm.togglePress ? "On " : "Off")
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-col",
+                {
+                  staticClass: "text-center mt-3",
+                  attrs: { sm: "", xs: "12" }
+                },
+                [
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        variant: "outline-info",
+                        pressed: _vm.togglePress
+                      },
+                      on: {
+                        "update:pressed": function($event) {
+                          _vm.togglePress = $event
+                        }
+                      }
+                    },
+                    [_vm._v("Info " + _vm._s(_vm.togglePress ? "On " : "Off"))]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-col",
+                {
+                  staticClass: "text-center mt-3",
+                  attrs: { sm: "", xs: "12" }
+                },
+                [
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        variant: "outline-warning",
+                        pressed: _vm.togglePress
+                      },
+                      on: {
+                        "update:pressed": function($event) {
+                          _vm.togglePress = $event
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Warning " + _vm._s(_vm.togglePress ? "On " : "Off")
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-col",
+                {
+                  staticClass: "text-center mt-3",
+                  attrs: { sm: "", xs: "12" }
+                },
+                [
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        variant: "outline-danger",
+                        pressed: _vm.togglePress
+                      },
+                      on: {
+                        "update:pressed": function($event) {
+                          _vm.togglePress = $event
+                        }
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "Danger " + _vm._s(_vm.togglePress ? "On " : "Off")
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
         "b-row",
         [
           _c(
             "b-col",
-            { attrs: { cols: "12" } },
+            { attrs: { xs: "12", md: "6" } },
             [
-              _c("b-card", [
-                _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-                  _c("strong", [_vm._v("Brand Button")])
-                ]),
-                _vm._v(" "),
-                _c("small", [_vm._v("Usage ")]),
-                _c("code", { staticStyle: { "text-transform": "lowercase" } }, [
-                  _vm._v(
-                    '<b-button variant="facebook"><span>Facebook</span></b-button>'
+              _c(
+                "b-card",
+                [
+                  _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                    _c("strong", [_vm._v("Block Level b-buttons")]),
+                    _vm._v(" "),
+                    _c("small", [
+                      _vm._v("Add this "),
+                      _c("code", [_vm._v("block")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "secondary", block: "" } },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "primary", block: "" } },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "success", block: "" } },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "info", block: "" } },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "warning", block: "" } },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "danger", block: "" } },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "link", block: "" } },
+                    [_vm._v("Block level button")]
                   )
-                ]),
-                _vm._v(" "),
-                _c("hr"),
-                _vm._v(" "),
-                _c("h6", [
-                  _vm._v("Size Small "),
-                  _c("small", [
-                    _vm._v("Add "),
-                    _c("code", [_vm._v('size="sm"')])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "facebook" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-facebook" }),
-                        _c("span", [_vm._v("Facebook")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "twitter" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-twitter" }),
-                        _c("span", [_vm._v("Twitter")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "linkedin" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-linkedin" }),
-                        _c("span", [_vm._v("LinkedIn")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "flickr" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-flickr" }),
-                        _c("span", [_vm._v("Flickr")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "tumblr" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-tumblr" }),
-                        _c("span", [_vm._v("Tumblr")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "xing" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-xing" }),
-                        _c("span", [_vm._v("Xing")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "github" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-github" }),
-                        _c("span", [_vm._v("Github")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "html5" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-html5" }),
-                        _c("span", [_vm._v("HTML5")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "openid" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-openid" }),
-                        _c("span", [_vm._v("OpenID")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "stack-overflow" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-stack-overflow" }),
-                        _c("span", [_vm._v("StackOverflow")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "css3" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-css3" }),
-                        _c("span", [_vm._v("CSS3")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "youtube" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-youtube" }),
-                        _c("span", [_vm._v("YouTube")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "dribbble" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-dribbble" }),
-                        _c("span", [_vm._v("Dribbble")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "google-plus" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-google-plus" }),
-                        _c("span", [_vm._v("Google+")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "instagram" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-instagram" }),
-                        _c("span", [_vm._v("Instagram")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "pinterest" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-pinterest" }),
-                        _c("span", [_vm._v("Pinterest")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vk" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vk" }),
-                        _c("span", [_vm._v("VK")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "yahoo" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-yahoo" }),
-                        _c("span", [_vm._v("Yahoo")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "behance" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-behance" }),
-                        _c("span", [_vm._v("Behance")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "dropbox" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-dropbox" }),
-                        _c("span", [_vm._v("Dropbox")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "reddit" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-reddit" }),
-                        _c("span", [_vm._v("Reddit")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "spotify" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-spotify" }),
-                        _c("span", [_vm._v("Spotify")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vine" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vine" }),
-                        _c("span", [_vm._v("Vine")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "foursquare" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-foursquare" }),
-                        _c("span", [_vm._v("Forsquare")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vimeo" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vimeo" }),
-                        _c("span", [_vm._v("Vimeo")])
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("h6", [_vm._v("Size Normal")]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "facebook" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-facebook" }),
-                        _c("span", [_vm._v("Facebook")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "twitter" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-twitter" }),
-                        _c("span", [_vm._v("Twitter")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "linkedin" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-linkedin" }),
-                        _c("span", [_vm._v("LinkedIn")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "flickr" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-flickr" }),
-                        _c("span", [_vm._v("Flickr")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "tumblr" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-tumblr" }),
-                        _c("span", [_vm._v("Tumblr")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "xing" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-xing" }),
-                        _c("span", [_vm._v("Xing")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "github" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-github" }),
-                        _c("span", [_vm._v("Github")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "html5" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-html5" }),
-                        _c("span", [_vm._v("HTML5")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "openid" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-openid" }),
-                        _c("span", [_vm._v("OpenID")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "stack-overflow" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-stack-overflow" }),
-                        _c("span", [_vm._v("StackOverflow")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "css3" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-css3" }),
-                        _c("span", [_vm._v("CSS3")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "youtube" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-youtube" }),
-                        _c("span", [_vm._v("YouTube")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "dribbble" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-dribbble" }),
-                        _c("span", [_vm._v("Dribbble")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "google-plus" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-google-plus" }),
-                        _c("span", [_vm._v("Google+")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "instagram" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-instagram" }),
-                        _c("span", [_vm._v("Instagram")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "pinterest" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-pinterest" }),
-                        _c("span", [_vm._v("Pinterest")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vk" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vk" }),
-                        _c("span", [_vm._v("VK")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "yahoo" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-yahoo" }),
-                        _c("span", [_vm._v("Yahoo")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "behance" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-behance" }),
-                        _c("span", [_vm._v("Behance")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "dropbox" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-dropbox" }),
-                        _c("span", [_vm._v("Dropbox")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "reddit" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-reddit" }),
-                        _c("span", [_vm._v("Reddit")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "spotify" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-spotify" }),
-                        _c("span", [_vm._v("Spotify")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vine" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vine" }),
-                        _c("span", [_vm._v("Vine")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "foursquare" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-foursquare" }),
-                        _c("span", [_vm._v("Forsquare")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vimeo" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vimeo" }),
-                        _c("span", [_vm._v("Vimeo")])
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("h6", [
-                  _vm._v("Size Large "),
-                  _c("small", [
-                    _vm._v("Add "),
-                    _c("code", [_vm._v('size="lg"')])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "facebook" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-facebook" }),
-                        _c("span", [_vm._v("Facebook")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "twitter" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-twitter" }),
-                        _c("span", [_vm._v("Twitter")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "linkedin" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-linkedin" }),
-                        _c("span", [_vm._v("LinkedIn")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "flickr" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-flickr" }),
-                        _c("span", [_vm._v("Flickr")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "tumblr" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-tumblr" }),
-                        _c("span", [_vm._v("Tumblr")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "xing" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-xing" }),
-                        _c("span", [_vm._v("Xing")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "github" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-github" }),
-                        _c("span", [_vm._v("Github")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "html5" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-html5" }),
-                        _c("span", [_vm._v("HTML5")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "openid" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-openid" }),
-                        _c("span", [_vm._v("OpenID")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "stack-overflow" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-stack-overflow" }),
-                        _c("span", [_vm._v("StackOverflow")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "css3" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-css3" }),
-                        _c("span", [_vm._v("CSS3")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "youtube" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-youtube" }),
-                        _c("span", [_vm._v("YouTube")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "dribbble" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-dribbble" }),
-                        _c("span", [_vm._v("Dribbble")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "google-plus" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-google-plus" }),
-                        _c("span", [_vm._v("Google+")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "instagram" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-instagram" }),
-                        _c("span", [_vm._v("Instagram")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "pinterest" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-pinterest" }),
-                        _c("span", [_vm._v("Pinterest")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vk" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vk" }),
-                        _c("span", [_vm._v("VK")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "yahoo" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-yahoo" }),
-                        _c("span", [_vm._v("Yahoo")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "behance" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-behance" }),
-                        _c("span", [_vm._v("Behance")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "dropbox" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-dropbox" }),
-                        _c("span", [_vm._v("Dropbox")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "reddit" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-reddit" }),
-                        _c("span", [_vm._v("Reddit")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "spotify" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-spotify" }),
-                        _c("span", [_vm._v("Spotify")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vine" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vine" }),
-                        _c("span", [_vm._v("Vine")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "foursquare" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-foursquare" }),
-                        _c("span", [_vm._v("Forsquare")])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vimeo" }
-                      },
-                      [
-                        _c("i", { staticClass: "fa fa-vimeo" }),
-                        _c("span", [_vm._v("Vimeo")])
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ])
+                ],
+                1
+              )
             ],
             1
           ),
           _vm._v(" "),
           _c(
             "b-col",
-            { attrs: { cols: "12" } },
+            { attrs: { xs: "12", md: "6" } },
             [
-              _c("b-card", [
-                _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-                  _c("strong", [_vm._v("Brand Button ")]),
+              _c(
+                "b-card",
+                [
+                  _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+                    _c("strong", [_vm._v("Block Level b-buttons")]),
+                    _vm._v(" "),
+                    _c("small", [
+                      _vm._v("Add this "),
+                      _c("code", [_vm._v("block")])
+                    ])
+                  ]),
                   _vm._v(" "),
-                  _c("small", [_vm._v("Icons only")])
-                ]),
-                _vm._v(" "),
-                _c("small", [_vm._v("Usage ")]),
-                _vm._v(" "),
-                _c("code", { staticStyle: { "text-transform": "lowercase" } }, [
-                  _vm._v(
-                    '<b-button variant="facebook icon"><span>Facebook</span></b-button>'
-                  )
-                ]),
-                _vm._v(" "),
-                _c("hr"),
-                _vm._v(" "),
-                _c("h6", [
-                  _vm._v("Size Small "),
-                  _c("small", [
-                    _vm._v("Add "),
-                    _c("code", [_vm._v('size="sm"')])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "facebook icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-facebook" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "twitter icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-twitter" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "linkedin icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-linkedin" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "flickr icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-flickr" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "tumblr icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-tumblr" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "xing icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-xing" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "github icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-github" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "html5 icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-html5" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "openid icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-openid" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "stack-overflow icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-stack-overflow" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "css3 icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-css3" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "youtube icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-youtube" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "dribbble icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-dribbble" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "google-plus icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-google-plus" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "instagram icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-instagram" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "pinterest icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-pinterest" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vk icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vk" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "yahoo icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-yahoo" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "behance icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-behance" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "dropbox icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-dropbox" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "reddit icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-reddit" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "spotify icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-spotify" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vine icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vine" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "foursquare icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-foursquare" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vimeo icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vimeo" })]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("h6", [_vm._v("Size Normal")]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "facebook icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-facebook" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "twitter icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-twitter" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "linkedin icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-linkedin" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "flickr icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-flickr" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "tumblr icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-tumblr" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "xing icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-xing" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "github icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-github" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "html5 icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-html5" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "openid icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-openid" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "stack-overflow icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-stack-overflow" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "css3 icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-css3" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "youtube icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-youtube" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "dribbble icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-dribbble" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "google-plus icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-google-plus" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "instagram icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-instagram" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "pinterest icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-pinterest" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vk icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vk" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "yahoo icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-yahoo" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "behance icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-behance" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "dropbox icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-dropbox" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "reddit icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-reddit" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "spotify icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-spotify" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vine icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vine" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "foursquare icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-foursquare" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vimeo icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vimeo" })]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("h6", [
-                  _vm._v("Size Large "),
-                  _c("small", [
-                    _vm._v("Add "),
-                    _c("code", [_vm._v('size="lg"')])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "facebook icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-facebook" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "twitter icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-twitter" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "linkedin icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-linkedin" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "flickr icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-flickr" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "tumblr icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-tumblr" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "xing icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-xing" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "github icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-github" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "html5 icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-html5" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "openid icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-openid" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "stack-overflow icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-stack-overflow" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "css3 icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-css3" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "youtube icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-youtube" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "dribbble icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-dribbble" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "google-plus icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-google-plus" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "instagram icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-instagram" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "pinterest icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-pinterest" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vk icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vk" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "yahoo icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-yahoo" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "behance icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-behance" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "dropbox icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-dropbox" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "reddit icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-reddit" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "spotify icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-spotify" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vine icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vine" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "foursquare icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-foursquare" })]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vimeo icon" }
-                      },
-                      [_c("i", { staticClass: "fa fa-vimeo" })]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "b-col",
-            { attrs: { cols: "12" } },
-            [
-              _c("b-card", [
-                _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-                  _c("strong", [_vm._v("Brand Button ")]),
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        size: "lg",
+                        variant: "outline-secondary",
+                        block: ""
+                      }
+                    },
+                    [_vm._v("Block level button")]
+                  ),
                   _vm._v(" "),
-                  _c("small", [_vm._v("Text only")])
-                ]),
-                _vm._v(" "),
-                _c("small", [_vm._v("Usage ")]),
-                _vm._v(" "),
-                _c("code", { staticStyle: { "text-transform": "lowercase" } }, [
-                  _vm._v(
-                    '<b-button variant="facebook text"><span>Facebook</span></b-button>'
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        size: "lg",
+                        variant: "outline-primary",
+                        block: ""
+                      }
+                    },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        size: "lg",
+                        variant: "outline-success",
+                        block: ""
+                      }
+                    },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      attrs: { size: "lg", variant: "outline-info", block: "" }
+                    },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        size: "lg",
+                        variant: "outline-warning",
+                        block: ""
+                      }
+                    },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      attrs: {
+                        size: "lg",
+                        variant: "outline-danger",
+                        block: ""
+                      }
+                    },
+                    [_vm._v("Block level button")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    { attrs: { size: "lg", variant: "ghost-info", block: "" } },
+                    [_vm._v("Block level button")]
                   )
-                ]),
-                _vm._v(" "),
-                _c("hr"),
-                _vm._v(" "),
-                _c("h6", [
-                  _vm._v("Size Small "),
-                  _c("small", [
-                    _vm._v("Add "),
-                    _c("code", [_vm._v('size="sm"')])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "facebook text" }
-                      },
-                      [_c("span", [_vm._v("Facebook")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "twitter text" }
-                      },
-                      [_c("span", [_vm._v("Twitter")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "linkedin text" }
-                      },
-                      [_c("span", [_vm._v("LinkedIn")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "flickr text" }
-                      },
-                      [_c("span", [_vm._v("Flickr")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "tumblr text" }
-                      },
-                      [_c("span", [_vm._v("Tumblr")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "xing text" }
-                      },
-                      [_c("span", [_vm._v("Xing")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "github text" }
-                      },
-                      [_c("span", [_vm._v("Github")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "html5 text" }
-                      },
-                      [_c("span", [_vm._v("HTML5")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "openid text" }
-                      },
-                      [_c("span", [_vm._v("OpenID")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "stack-overflow text" }
-                      },
-                      [_c("span", [_vm._v("StackOverflow")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "css3 text" }
-                      },
-                      [_c("span", [_vm._v("CSS3")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "youtube text" }
-                      },
-                      [_c("span", [_vm._v("YouTube")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "dribbble text" }
-                      },
-                      [_c("span", [_vm._v("Dribbble")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "google-plus text" }
-                      },
-                      [_c("span", [_vm._v("Google+")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "instagram text" }
-                      },
-                      [_c("span", [_vm._v("Instagram")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "pinterest text" }
-                      },
-                      [_c("span", [_vm._v("Pinterest")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vk text" }
-                      },
-                      [_c("span", [_vm._v("VK")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "yahoo text" }
-                      },
-                      [_c("span", [_vm._v("Yahoo")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "behance text" }
-                      },
-                      [_c("span", [_vm._v("Behance")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "dropbox text" }
-                      },
-                      [_c("span", [_vm._v("Dropbox")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "reddit text" }
-                      },
-                      [_c("span", [_vm._v("Reddit")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "spotify text" }
-                      },
-                      [_c("span", [_vm._v("Spotify")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vine text" }
-                      },
-                      [_c("span", [_vm._v("Vine")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "foursquare text" }
-                      },
-                      [_c("span", [_vm._v("Forsquare")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "sm", variant: "vimeo text" }
-                      },
-                      [_c("span", [_vm._v("Vimeo")])]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("h6", [_vm._v("Size Normal")]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "facebook text" }
-                      },
-                      [_c("span", [_vm._v("Facebook")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "twitter text" }
-                      },
-                      [_c("span", [_vm._v("Twitter")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "linkedin text" }
-                      },
-                      [_c("span", [_vm._v("LinkedIn")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "flickr text" }
-                      },
-                      [_c("span", [_vm._v("Flickr")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "tumblr text" }
-                      },
-                      [_c("span", [_vm._v("Tumblr")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "xing text" }
-                      },
-                      [_c("span", [_vm._v("Xing")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "github text" }
-                      },
-                      [_c("span", [_vm._v("Github")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "html5 text" }
-                      },
-                      [_c("span", [_vm._v("HTML5")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "openid text" }
-                      },
-                      [_c("span", [_vm._v("OpenID")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "stack-overflow text" }
-                      },
-                      [_c("span", [_vm._v("StackOverflow")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "css3 text" }
-                      },
-                      [_c("span", [_vm._v("CSS3")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "youtube text" }
-                      },
-                      [_c("span", [_vm._v("YouTube")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "dribbble text" }
-                      },
-                      [_c("span", [_vm._v("Dribbble")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "google-plus text" }
-                      },
-                      [_c("span", [_vm._v("Google+")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "instagram text" }
-                      },
-                      [_c("span", [_vm._v("Instagram")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "pinterest text" }
-                      },
-                      [_c("span", [_vm._v("Pinterest")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vk text" }
-                      },
-                      [_c("span", [_vm._v("VK")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "yahoo text" }
-                      },
-                      [_c("span", [_vm._v("Yahoo")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "behance text" }
-                      },
-                      [_c("span", [_vm._v("Behance")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "dropbox text" }
-                      },
-                      [_c("span", [_vm._v("Dropbox")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "reddit text" }
-                      },
-                      [_c("span", [_vm._v("Reddit")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "spotify text" }
-                      },
-                      [_c("span", [_vm._v("Spotify")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vine text" }
-                      },
-                      [_c("span", [_vm._v("Vine")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "foursquare text" }
-                      },
-                      [_c("span", [_vm._v("Forsquare")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { variant: "vimeo text" }
-                      },
-                      [_c("span", [_vm._v("Vimeo")])]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("h6", [
-                  _vm._v("Size Large "),
-                  _c("small", [
-                    _vm._v("Add "),
-                    _c("code", [_vm._v('size="lg"')])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  [
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "facebook text" }
-                      },
-                      [_c("span", [_vm._v("Facebook")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "twitter text" }
-                      },
-                      [_c("span", [_vm._v("Twitter")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "linkedin text" }
-                      },
-                      [_c("span", [_vm._v("LinkedIn")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "flickr text" }
-                      },
-                      [_c("span", [_vm._v("Flickr")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "tumblr text" }
-                      },
-                      [_c("span", [_vm._v("Tumblr")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "xing text" }
-                      },
-                      [_c("span", [_vm._v("Xing")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "github text" }
-                      },
-                      [_c("span", [_vm._v("Github")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "html5 text" }
-                      },
-                      [_c("span", [_vm._v("HTML5")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "openid text" }
-                      },
-                      [_c("span", [_vm._v("OpenID")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "stack-overflow text" }
-                      },
-                      [_c("span", [_vm._v("StackOverflow")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "css3 text" }
-                      },
-                      [_c("span", [_vm._v("CSS3")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "youtube text" }
-                      },
-                      [_c("span", [_vm._v("YouTube")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "dribbble text" }
-                      },
-                      [_c("span", [_vm._v("Dribbble")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "google-plus text" }
-                      },
-                      [_c("span", [_vm._v("Google+")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "instagram text" }
-                      },
-                      [_c("span", [_vm._v("Instagram")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "pinterest text" }
-                      },
-                      [_c("span", [_vm._v("Pinterest")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vk text" }
-                      },
-                      [_c("span", [_vm._v("VK")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "yahoo text" }
-                      },
-                      [_c("span", [_vm._v("Yahoo")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "behance text" }
-                      },
-                      [_c("span", [_vm._v("Behance")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "dropbox text" }
-                      },
-                      [_c("span", [_vm._v("Dropbox")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "reddit text" }
-                      },
-                      [_c("span", [_vm._v("Reddit")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "spotify text" }
-                      },
-                      [_c("span", [_vm._v("Spotify")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vine text" }
-                      },
-                      [_c("span", [_vm._v("Vine")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "foursquare text" }
-                      },
-                      [_c("span", [_vm._v("Forsquare")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-button",
-                      {
-                        staticClass: "mr-1 btn-brand",
-                        attrs: { size: "lg", variant: "vimeo text" }
-                      },
-                      [_c("span", [_vm._v("Vimeo")])]
-                    )
-                  ],
-                  1
-                )
-              ])
+                ],
+                1
+              )
             ],
             1
           )
@@ -2816,18 +4556,18 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/buttons/BrandButtons.vue":
-/*!******************************************************************!*\
-  !*** ./resources/assets/js/admin/views/buttons/BrandButtons.vue ***!
-  \******************************************************************/
+/***/ "./resources/assets/js/admin/views/buttons/StandardButtons.vue":
+/*!*********************************************************************!*\
+  !*** ./resources/assets/js/admin/views/buttons/StandardButtons.vue ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _BrandButtons_vue_vue_type_template_id_2119ed4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true& */ "./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true&");
-/* harmony import */ var _BrandButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BrandButtons.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css& */ "./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css&");
+/* harmony import */ var _StandardButtons_vue_vue_type_template_id_27be5c33_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true& */ "./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true&");
+/* harmony import */ var _StandardButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StandardButtons.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css& */ "./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -2838,66 +4578,66 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _BrandButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _BrandButtons_vue_vue_type_template_id_2119ed4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _BrandButtons_vue_vue_type_template_id_2119ed4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _StandardButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _StandardButtons_vue_vue_type_template_id_27be5c33_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StandardButtons_vue_vue_type_template_id_27be5c33_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "2119ed4a",
+  "27be5c33",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/assets/js/admin/views/buttons/BrandButtons.vue"
+component.options.__file = "resources/assets/js/admin/views/buttons/StandardButtons.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
+/***/ "./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./BrandButtons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./StandardButtons.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css&":
-/*!***************************************************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css& ***!
-  \***************************************************************************************************************************/
+/***/ "./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css&":
+/*!******************************************************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/style-loader!../../../../../../node_modules/css-loader??ref--6-1!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=style&index=0&id=2119ed4a&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_style_index_0_id_2119ed4a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/style-loader!../../../../../../node_modules/css-loader??ref--6-1!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=style&index=0&id=27be5c33&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_style_index_0_id_27be5c33_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true&":
-/*!*************************************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true& ***!
-  \*************************************************************************************************************/
+/***/ "./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true&":
+/*!****************************************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true& ***!
+  \****************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_template_id_2119ed4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/BrandButtons.vue?vue&type=template&id=2119ed4a&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_template_id_2119ed4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_template_id_27be5c33_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/buttons/StandardButtons.vue?vue&type=template&id=27be5c33&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_template_id_27be5c33_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BrandButtons_vue_vue_type_template_id_2119ed4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StandardButtons_vue_vue_type_template_id_27be5c33_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
