@@ -106,7 +106,8 @@ function configRoutes() {
         },
         {
           path: 'users',
-          meta: { label: 'Users'},
+          // redirect: '/users',
+          // meta: { label: 'Users'},
           component: {
             render (c) { return c('router-view') }
           },
@@ -117,6 +118,7 @@ function configRoutes() {
             },
             {
               path: ':id',
+              // redirect: '/users/:id',
               meta: { label: 'User Details'},
               name: 'User',
               component: User,

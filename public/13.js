@@ -136,10 +136,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     pagination: 'user/getPagination',
     loadingIssue: 'user/getLoadingIssue'
   })),
+  beforeMount: function beforeMount() {
+    this.items = this.getItems;
+    this.currentPage = this.getCurrentPage;
+    this.totalRows = this.pagination.total;
+  },
   mounted: function mounted() {
     var _this = this;
 
     if (this.items.length === 0) {
+      console.log('mount');
       this.loading = true;
       this.getUsersPagination(this.currentPage).then(function () {
         _this.loading = false;
@@ -152,13 +158,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     currentPage: function currentPage() {
       var _this2 = this;
 
-      this.loading = true;
-      this.getUsersPagination(this.currentPage).then(function () {
-        _this2.loading = false;
-        _this2.items = _this2.getItems;
-      }).catch(function () {
-        _this2.loading = true;
-      });
+      console.log(this.currentPage);
+      console.log(this.getCurrentPage);
+
+      if (this.currentPage !== this.getCurrentPage) {
+        this.loading = true;
+        this.getUsersPagination(this.currentPage).then(function () {
+          console.log('change on watch');
+          _this2.loading = false;
+          _this2.items = _this2.getItems;
+        }).catch(function () {
+          _this2.loading = true;
+        });
+      }
     }
   },
   methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('user', ['getUsersPagination']), {

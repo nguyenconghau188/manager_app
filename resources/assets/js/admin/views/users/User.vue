@@ -3,13 +3,58 @@
     <b-col cols="12" lg="6">
       <b-card no-header>
         <template slot="header">
-          User id:  {{ $route.params.id }}
+          User uuid:  #{{ $route.params.id }}
         </template>
-        <b-table striped small fixed responsive="sm" :items="items" fields=":fields">
-        </b-table>
-        <template slot="footer">
+        <div>
+        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+          <b-form-group
+            id="input-group-1"
+            label="Email address:"
+            label-for="input-1"
+            description="We'll never share your email with anyone else."
+          >
+            <b-form-input
+              id="input-1"
+              v-model="user.email"
+              type="email"
+              required
+              placeholder="Enter email"
+            ></b-form-input>
+          </b-form-group>
+
+          <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+            <b-form-input
+              id="input-2"
+              v-model="user.name"
+              required
+              placeholder="Enter name"
+            ></b-form-input>
+          </b-form-group>
+
+          <!-- <b-form-group id="input-group-3" label="Role:" label-for="input-3">
+            <b-form-select
+              id="input-3"
+              v-model="user.role_name"
+              :options="foods"
+              required
+            ></b-form-select>
+          </b-form-group> -->
+<!-- 
+          <b-form-group id="input-group-4">
+            <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
+              <b-form-checkbox value="me">Check me out</b-form-checkbox>
+              <b-form-checkbox value="that">Check that out</b-form-checkbox>
+            </b-form-checkbox-group>
+          </b-form-group> -->
+
+          <b-button type="submit" variant="primary">Submit</b-button>
+          <b-button type="reset" variant="danger">Reset</b-button>
           <b-button @click="goBack">Back</b-button>
-        </template>
+        </b-form>
+        <!-- <b-card class="mt-3" header="Form Data Result">
+          <pre class="m-0">{{ form }}</pre>
+        </b-card> -->
+      </div>
       </b-card>
     </b-col>
   </b-row>
@@ -32,7 +77,8 @@ export default {
         {key: 'key'},
         {key: 'value'},
       ],
-      items: {},
+      user: {},
+      show: true,
     }
   },
   computed: {
@@ -43,17 +89,23 @@ export default {
   mounted() {
     let id = this.$route.params.id;
     console.log(id)
-    const user = this.users.find(user => user.uuid === id);
-    const userDetails = user ? Object.entries(user) : [['uuid', 'Not found']]
-    this.items = userDetails.map(([key, value]) => {return {key: key, value: value}})
+    this.user = this.users.find(user => user.uuid === id);
+    // const userDetails = user ? Object.entries(user) : [['uuid', 'Not found']]
+    // this.item = userDetails.map(([key, value]) => {return {key: key, value: value}})
                   
-    console.log(this.items)
+    console.log(this.user)
   },
   methods: {
     goBack() {
       this.$router.go(-1)
       // this.$router.replace({path: '/users'})
-    }
+    },
+    onSubmit() {
+
+    },
+    onReset() {
+
+    },
   }
 }
 </script>

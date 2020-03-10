@@ -129,8 +129,14 @@ export default {
       loadingIssue: 'user/getLoadingIssue',
     }),
   },
+  beforeMount() {
+    this.items = this.getItems;
+    this.currentPage = this.getCurrentPage;
+    this.totalRows = this.pagination.total;
+  },
   mounted() {
     if (this.items.length === 0) {
+      console.log('mount')
       this.loading = true;
       this.getUsersPagination(this.currentPage)
         .then(() => {
@@ -141,17 +147,22 @@ export default {
     }
   },
   watch: {
-    currentPage() {
-      this.loading = true;
-      this.getUsersPagination(this.currentPage)
-          .then(() => { 
-            this.loading = false;
-            this.items = this.getItems;
-          })
-          .catch(() => {
-            this.loading = true;
-          });
-    }
+    currentPage: function() {
+      console.log(this.currentPage)
+      console.log(this.getCurrentPage)
+      if (this.currentPage !== this.getCurrentPage) {
+        this.loading = true;
+        this.getUsersPagination(this.currentPage)
+            .then(() => { 
+              console.log('change on watch')
+              this.loading = false;
+              this.items = this.getItems;
+            })
+            .catch(() => {
+              this.loading = true;
+            });
+      }
+    },
   },
   methods: {
     ...mapActions('user', ['getUsersPagination']),

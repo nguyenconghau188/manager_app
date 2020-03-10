@@ -80601,7 +80601,7 @@ var Colors = function Colors() {
 };
 
 var Typography = function Typography() {
-  return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @/views/theme/Typography */ "./resources/assets/js/admin/views/theme/Typography.vue"));
+  return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! @/views/theme/Typography */ "./resources/assets/js/admin/views/theme/Typography.vue"));
 };
 
 var Charts = function Charts() {
@@ -80622,7 +80622,7 @@ var Forms = function Forms() {
 };
 
 var Switches = function Switches() {
-  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(26)]).then(__webpack_require__.bind(null, /*! @/views/base/Switches */ "./resources/assets/js/admin/views/base/Switches.vue"));
+  return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(25)]).then(__webpack_require__.bind(null, /*! @/views/base/Switches */ "./resources/assets/js/admin/views/base/Switches.vue"));
 };
 
 var Tables = function Tables() {
@@ -80630,51 +80630,51 @@ var Tables = function Tables() {
 };
 
 var Tabs = function Tabs() {
-  return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @/views/base/Tabs */ "./resources/assets/js/admin/views/base/Tabs.vue"));
+  return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @/views/base/Tabs */ "./resources/assets/js/admin/views/base/Tabs.vue"));
 };
 
 var Breadcrumbs = function Breadcrumbs() {
-  return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! @/views/base/Breadcrumbs */ "./resources/assets/js/admin/views/base/Breadcrumbs.vue"));
+  return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @/views/base/Breadcrumbs */ "./resources/assets/js/admin/views/base/Breadcrumbs.vue"));
 };
 
 var Carousels = function Carousels() {
-  return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @/views/base/Carousels */ "./resources/assets/js/admin/views/base/Carousels.vue"));
+  return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! @/views/base/Carousels */ "./resources/assets/js/admin/views/base/Carousels.vue"));
 };
 
 var Collapses = function Collapses() {
-  return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! @/views/base/Collapses */ "./resources/assets/js/admin/views/base/Collapses.vue"));
+  return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @/views/base/Collapses */ "./resources/assets/js/admin/views/base/Collapses.vue"));
 };
 
 var Jumbotrons = function Jumbotrons() {
-  return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @/views/base/Jumbotrons */ "./resources/assets/js/admin/views/base/Jumbotrons.vue"));
+  return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! @/views/base/Jumbotrons */ "./resources/assets/js/admin/views/base/Jumbotrons.vue"));
 };
 
 var ListGroups = function ListGroups() {
-  return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! @/views/base/ListGroups */ "./resources/assets/js/admin/views/base/ListGroups.vue"));
+  return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @/views/base/ListGroups */ "./resources/assets/js/admin/views/base/ListGroups.vue"));
 };
 
 var Navs = function Navs() {
-  return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @/views/base/Navs */ "./resources/assets/js/admin/views/base/Navs.vue"));
+  return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @/views/base/Navs */ "./resources/assets/js/admin/views/base/Navs.vue"));
 };
 
 var Navbars = function Navbars() {
-  return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @/views/base/Navbars */ "./resources/assets/js/admin/views/base/Navbars.vue"));
+  return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! @/views/base/Navbars */ "./resources/assets/js/admin/views/base/Navbars.vue"));
 };
 
 var Paginations = function Paginations() {
-  return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! @/views/base/Paginations */ "./resources/assets/js/admin/views/base/Paginations.vue"));
+  return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @/views/base/Paginations */ "./resources/assets/js/admin/views/base/Paginations.vue"));
 };
 
 var Popovers = function Popovers() {
-  return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! @/views/base/Popovers */ "./resources/assets/js/admin/views/base/Popovers.vue"));
+  return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! @/views/base/Popovers */ "./resources/assets/js/admin/views/base/Popovers.vue"));
 };
 
 var ProgressBars = function ProgressBars() {
-  return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @/views/base/ProgressBars */ "./resources/assets/js/admin/views/base/ProgressBars.vue"));
+  return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! @/views/base/ProgressBars */ "./resources/assets/js/admin/views/base/ProgressBars.vue"));
 };
 
 var Tooltips = function Tooltips() {
-  return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @/views/base/Tooltips */ "./resources/assets/js/admin/views/base/Tooltips.vue"));
+  return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @/views/base/Tooltips */ "./resources/assets/js/admin/views/base/Tooltips.vue"));
 }; // Views - Buttons
 
 
@@ -80683,11 +80683,11 @@ var StandardButtons = function StandardButtons() {
 };
 
 var ButtonGroups = function ButtonGroups() {
-  return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @/views/buttons/ButtonGroups */ "./resources/assets/js/admin/views/buttons/ButtonGroups.vue"));
+  return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @/views/buttons/ButtonGroups */ "./resources/assets/js/admin/views/buttons/ButtonGroups.vue"));
 };
 
 var Dropdowns = function Dropdowns() {
-  return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @/views/buttons/Dropdowns */ "./resources/assets/js/admin/views/buttons/Dropdowns.vue"));
+  return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @/views/buttons/Dropdowns */ "./resources/assets/js/admin/views/buttons/Dropdowns.vue"));
 };
 
 var BrandButtons = function BrandButtons() {
@@ -80696,41 +80696,41 @@ var BrandButtons = function BrandButtons() {
 
 
 var Flags = function Flags() {
-  return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @/views/icons/Flags */ "./resources/assets/js/admin/views/icons/Flags.vue"));
+  return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @/views/icons/Flags */ "./resources/assets/js/admin/views/icons/Flags.vue"));
 };
 
 var FontAwesome = function FontAwesome() {
-  return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! @/views/icons/FontAwesome */ "./resources/assets/js/admin/views/icons/FontAwesome.vue"));
+  return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @/views/icons/FontAwesome */ "./resources/assets/js/admin/views/icons/FontAwesome.vue"));
 };
 
 var SimpleLineIcons = function SimpleLineIcons() {
-  return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @/views/icons/SimpleLineIcons */ "./resources/assets/js/admin/views/icons/SimpleLineIcons.vue"));
+  return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! @/views/icons/SimpleLineIcons */ "./resources/assets/js/admin/views/icons/SimpleLineIcons.vue"));
 };
 
 var CoreUIIcons = function CoreUIIcons() {
-  return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @/views/icons/CoreUIIcons */ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue"));
+  return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @/views/icons/CoreUIIcons */ "./resources/assets/js/admin/views/icons/CoreUIIcons.vue"));
 }; // Views - Notifications
 
 
 var Alerts = function Alerts() {
-  return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @/views/notifications/Alerts */ "./resources/assets/js/admin/views/notifications/Alerts.vue"));
+  return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @/views/notifications/Alerts */ "./resources/assets/js/admin/views/notifications/Alerts.vue"));
 };
 
 var Badges = function Badges() {
-  return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @/views/notifications/Badges */ "./resources/assets/js/admin/views/notifications/Badges.vue"));
+  return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @/views/notifications/Badges */ "./resources/assets/js/admin/views/notifications/Badges.vue"));
 };
 
 var Modals = function Modals() {
-  return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @/views/notifications/Modals */ "./resources/assets/js/admin/views/notifications/Modals.vue"));
+  return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @/views/notifications/Modals */ "./resources/assets/js/admin/views/notifications/Modals.vue"));
 }; // Views - Pages
 
 
 var Page404 = function Page404() {
-  return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @/views/pages/Page404 */ "./resources/assets/js/admin/views/pages/Page404.vue"));
+  return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @/views/pages/Page404 */ "./resources/assets/js/admin/views/pages/Page404.vue"));
 };
 
 var Page500 = function Page500() {
-  return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @/views/pages/Page500 */ "./resources/assets/js/admin/views/pages/Page500.vue"));
+  return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @/views/pages/Page500 */ "./resources/assets/js/admin/views/pages/Page500.vue"));
 };
 
 var Login = function Login() {
@@ -80738,7 +80738,7 @@ var Login = function Login() {
 };
 
 var Register = function Register() {
-  return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! @/views/pages/Register */ "./resources/assets/js/admin/views/pages/Register.vue"));
+  return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @/views/pages/Register */ "./resources/assets/js/admin/views/pages/Register.vue"));
 }; // Users
 
 
@@ -80747,7 +80747,7 @@ var Users = function Users() {
 };
 
 var User = function User() {
-  return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @/views/users/User */ "./resources/assets/js/admin/views/users/User.vue"));
+  return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @/views/users/User */ "./resources/assets/js/admin/views/users/User.vue"));
 };
 
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -80790,9 +80790,8 @@ function configRoutes() {
       component: Widgets
     }, {
       path: 'users',
-      meta: {
-        label: 'Users'
-      },
+      // redirect: '/users',
+      // meta: { label: 'Users'},
       component: {
         render: function render(c) {
           return c('router-view');
@@ -80803,6 +80802,7 @@ function configRoutes() {
         component: Users
       }, {
         path: ':id',
+        // redirect: '/users/:id',
         meta: {
           label: 'User Details'
         },

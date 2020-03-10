@@ -1,37 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[24],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Popovers.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/Popovers.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -189,35 +166,73 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'popovers',
+  name: 'progress-bars',
   data: function data() {
     return {
-      placements: ['topright', 'top', 'topleft', 'bottomright', 'bottom', 'bottomleft', 'righttop', 'right', 'lefttop', 'rightbottom', 'left', 'leftbottom'],
-      show: false
+      counter: 45,
+      max: 100,
+      max2: 50,
+      value: 33.333333333,
+      value3: 75,
+      bars: [{
+        variant: 'success',
+        value: 75
+      }, {
+        variant: 'info',
+        value: 75
+      }, {
+        variant: 'warning',
+        value: 75
+      }, {
+        variant: 'danger',
+        value: 75
+      }, {
+        variant: 'primary',
+        value: 75
+      }, {
+        variant: 'secondary',
+        value: 75
+      }, {
+        variant: 'dark',
+        value: 75
+      }],
+      timer: null,
+      striped: true,
+      animate: true,
+      max3: 100,
+      values: [15, 30, 20]
     };
   },
   methods: {
-    onOpen: function onOpen() {
-      this.$refs.popover1.$emit('open');
+    clicked: function clicked() {
+      this.counter = Math.random() * this.max;
+      console.log('Change progress to ' + Math.round(this.counter * 100) / 100);
     },
-    onClose: function onClose() {
-      this.$refs.popover1.$emit('close');
-    },
-    onEnable: function onEnable() {
-      this.$refs.popover2.$emit('enable');
-    },
-    onDisable: function onDisable() {
-      this.$refs.popover2.$emit('disable');
+    setClock: function setClock() {
+      var _this = this;
+
+      this.timer = setInterval(function () {
+        _this.bars.forEach(function (bar) {
+          bar.value = 25 + Math.random() * 75;
+        });
+      }, 2000);
     }
+  },
+  mounted: function mounted() {
+    this.setClock();
+  },
+  beforeDestroy: function beforeDestroy() {
+    clearInterval(this.timer);
+    this.timer = null;
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Popovers.vue?vue&type=template&id=11899829&":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/Popovers.vue?vue&type=template&id=11899829& ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=template&id=565ee170&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=template&id=565ee170& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -240,7 +255,7 @@ var render = function() {
           [
             _c("div", { attrs: { slot: "header" }, slot: "header" }, [
               _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Bootstrap Popovers")]),
+              _c("strong", [_vm._v(" Bootstrap Progress")]),
               _vm._v(" "),
               _c("div", { staticClass: "card-header-actions" }, [
                 _c(
@@ -249,7 +264,7 @@ var render = function() {
                     staticClass: "card-header-action",
                     attrs: {
                       href:
-                        "https://bootstrap-vue.js.org/docs/components/popovers",
+                        "https://bootstrap-vue.js.org/docs/components/progress",
                       rel: "noreferrer noopener",
                       target: "_blank"
                     }
@@ -260,172 +275,42 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c(
-              "b-row",
-              [
-                _c("b-col", { attrs: { cols: "6" } }, [
-                  _c(
-                    "div",
-                    { staticClass: "my-3 text-center" },
-                    [
-                      _c(
-                        "b-btn",
-                        {
-                          directives: [
-                            {
-                              name: "b-popover",
-                              rawName: "v-b-popover.hover",
-                              value: "I am popover content!",
-                              expression: "'I am popover content!'",
-                              modifiers: { hover: true }
-                            }
-                          ],
-                          attrs: { title: "Popover Title" }
-                        },
-                        [_vm._v("\n              Hover Me\n            ")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("b-col", { attrs: { cols: "6" } }, [
-                  _c(
-                    "div",
-                    { staticClass: "my-3 text-center" },
-                    [
-                      _c(
-                        "b-btn",
-                        {
-                          attrs: {
-                            id: "popoverButton-open",
-                            variant: "primary"
-                          }
-                        },
-                        [_vm._v("Button")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "b-popover",
-                        {
-                          attrs: {
-                            show: "",
-                            target: "popoverButton-open",
-                            title: "Popover"
-                          }
-                        },
-                        [
-                          _vm._v("\n              I start "),
-                          _c("strong", [_vm._v("open")])
-                        ]
-                      )
-                    ],
-                    1
-                  )
-                ])
-              ],
-              1
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "b-card",
-          { attrs: { "header-tag": "header", "footer-tag": "footer" } },
-          [
-            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-              _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Popovers ")]),
-              _vm._v(" "),
-              _c("small", [_vm._v("placement")])
-            ]),
-            _vm._v(" "),
-            _c(
               "div",
-              { staticClass: "my-3" },
               [
+                _c("b-progress", {
+                  attrs: {
+                    value: _vm.counter,
+                    max: _vm.max,
+                    "show-progress": "",
+                    animated: ""
+                  }
+                }),
+                _vm._v(" "),
                 _c(
-                  "b-row",
-                  _vm._l(_vm.placements, function(placement) {
-                    return _c(
-                      "b-col",
-                      {
-                        key: placement,
-                        staticClass: "py-4 text-center",
-                        attrs: { md: "4" }
-                      },
-                      [
-                        _c(
-                          "b-btn",
-                          {
-                            attrs: {
-                              id: "exPopover1-" + placement,
-                              variant: "primary"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n              " +
-                                _vm._s(placement) +
-                                "\n            "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("b-popover", {
-                          attrs: {
-                            target: "exPopover1-" + placement,
-                            placement: placement,
-                            title: "Popover!",
-                            triggers: "hover focus",
-                            content: "Placement " + placement
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  }),
-                  1
-                )
-              ],
-              1
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "b-card",
-          {
-            staticClass: "d-sm-down-none",
-            attrs: { "header-tag": "header", "footer-tag": "footer" }
-          },
-          [
-            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-              _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Popovers ")]),
-              _vm._v(" "),
-              _c("small", [_vm._v("via properties or slots")])
-            ]),
-            _vm._v(" "),
-            _c(
-              "b-row",
-              [
-                _c(
-                  "b-col",
-                  { staticClass: "py-4 text-center", attrs: { md: "6" } },
+                  "b-progress",
+                  {
+                    staticClass: "mt-1",
+                    attrs: { max: _vm.max, "show-value": "" }
+                  },
                   [
-                    _c(
-                      "b-btn",
-                      { attrs: { id: "exPopover2", variant: "primary" } },
-                      [_vm._v("Using properties")]
-                    ),
-                    _vm._v(" "),
-                    _c("b-popover", {
+                    _c("b-progress-bar", {
                       attrs: {
-                        target: "exPopover2",
-                        title: "Prop Examples",
-                        triggers: "hover focus",
-                        content: "Embedding content using properties is easy"
+                        value: _vm.counter * (6 / 10),
+                        variant: "success"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: {
+                        value: _vm.counter * (2.5 / 10),
+                        variant: "warning"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: {
+                        value: _vm.counter * (1.5 / 10),
+                        variant: "danger"
                       }
                     })
                   ],
@@ -433,47 +318,14 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c(
-                  "b-col",
-                  { staticClass: "py-4 text-center", attrs: { md: "6" } },
-                  [
-                    _c(
-                      "b-btn",
-                      { attrs: { id: "exPopover3", variant: "primary" } },
-                      [_vm._v("Using slots")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-popover",
-                      {
-                        attrs: { target: "exPopover3", triggers: "hover focus" }
-                      },
-                      [
-                        _c("template", { slot: "title" }, [
-                          _vm._v("Content via Slots")
-                        ]),
-                        _vm._v("\n            Embedding content "),
-                        _c("span", { staticClass: "text-danger" }, [
-                          _vm._v("using slots")
-                        ]),
-                        _vm._v("\n            affords you "),
-                        _c("em", [
-                          _vm._v("greater "),
-                          _c("strong", [_vm._v("control.")])
-                        ]),
-                        _vm._v(
-                          " and\n            basic HTML support.\n          "
-                        )
-                      ],
-                      2
-                    )
-                  ],
-                  1
+                  "b-btn",
+                  { staticClass: "mt-4", on: { click: _vm.clicked } },
+                  [_vm._v("Click me")]
                 )
               ],
               1
             )
-          ],
-          1
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -482,130 +334,191 @@ var render = function() {
           [
             _c("div", { attrs: { slot: "header" }, slot: "header" }, [
               _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Popovers ")]),
               _vm._v(" "),
-              _c("small", [_vm._v("show")])
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("labels")])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "d-flex flex-column text-md-center" }, [
-              _c(
-                "div",
-                { staticClass: "p-2" },
-                [
-                  _c(
-                    "b-btn",
-                    { attrs: { id: "popoverButton-sync", variant: "primary" } },
-                    [_vm._v("I have a popover")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "p-2" },
-                [
-                  _c(
-                    "b-btn",
-                    {
-                      staticClass: "px-1",
-                      on: {
-                        click: function($event) {
-                          _vm.show = !_vm.show
-                        }
-                      }
-                    },
-                    [_vm._v("Toggle Popover")]
-                  ),
+            _c(
+              "div",
+              [
+                _c("h6", [_vm._v("No label")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: { value: _vm.value, max: _vm.max2 }
+                }),
+                _vm._v(" "),
+                _c("h6", [_vm._v("Value label")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: { value: _vm.value, max: _vm.max2, "show-value": "" }
+                }),
+                _vm._v(" "),
+                _c("h6", [_vm._v("Progress label")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: {
+                    value: _vm.value,
+                    max: _vm.max2,
+                    "show-progress": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("h6", [_vm._v("Value label with precision")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: {
+                    value: _vm.value,
+                    max: _vm.max2,
+                    precision: 2,
+                    "show-value": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("h6", [_vm._v("Progress label with precision")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: {
+                    value: _vm.value,
+                    max: _vm.max2,
+                    precision: 2,
+                    "show-progress": ""
+                  }
+                })
+              ],
+              1
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "b-card",
+          { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+          [
+            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+              _c("i", { staticClass: "fa fa-align-justify" }),
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("width")])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h6", [_vm._v("Default width")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: { value: _vm.value3 }
+                }),
+                _vm._v(" "),
+                _c("h6", [_vm._v("Custom widths")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "w-75 mb-2",
+                  attrs: { value: _vm.value3 }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "w-50 mb-2",
+                  attrs: { value: _vm.value3 }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "w-25",
+                  attrs: { value: _vm.value3 }
+                })
+              ],
+              1
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "b-card",
+          { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+          [
+            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+              _c("i", { staticClass: "fa fa-align-justify" }),
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("height")])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              [
+                _c("h6", [_vm._v("Default height")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: { value: _vm.value3, "show-progress": "" }
+                }),
+                _vm._v(" "),
+                _c("h6", [_vm._v("Custom heights")]),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: {
+                    height: "2rem",
+                    value: _vm.value3,
+                    "show-progress": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: {
+                    height: "20px",
+                    value: _vm.value3,
+                    "show-progress": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  attrs: { height: "2px", value: _vm.value3 }
+                })
+              ],
+              1
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "b-card",
+          { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+          [
+            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+              _c("i", { staticClass: "fa fa-align-justify" }),
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("variants")])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              _vm._l(_vm.bars, function(bar, index) {
+                return _c("div", { key: index, staticClass: "row mb-1" }, [
+                  _c("div", { staticClass: "col-sm-2" }, [
+                    _vm._v(_vm._s(bar.variant) + ":")
+                  ]),
                   _vm._v(" "),
                   _c(
-                    "b-popover",
-                    {
-                      attrs: {
-                        show: _vm.show,
-                        target: "popoverButton-sync",
-                        title: "Popover"
-                      },
-                      on: {
-                        "update:show": function($event) {
-                          _vm.show = $event
-                        }
-                      }
-                    },
+                    "div",
+                    { staticClass: "col-sm-10 pt-1" },
                     [
-                      _vm._v("\n            Hello "),
-                      _c("strong", [_vm._v("World!")])
-                    ]
+                      _c("b-progress", {
+                        key: bar.variant,
+                        attrs: { value: bar.value, variant: bar.variant }
+                      })
+                    ],
+                    1
                   )
-                ],
-                1
-              )
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "b-card",
-          { attrs: { "header-tag": "header", "footer-tag": "footer" } },
-          [
-            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
-              _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Popover ")]),
-              _vm._v(" "),
-              _c("small", [_vm._v("open/close events")])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "d-flex flex-column text-md-center" },
-              [
-                _c(
-                  "div",
-                  { staticClass: "p-2" },
-                  [
-                    _c(
-                      "b-btn",
-                      {
-                        attrs: { id: "popoverButton-event", variant: "primary" }
-                      },
-                      [_vm._v("I have a popover")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "p-2" },
-                  [
-                    _c(
-                      "b-btn",
-                      { staticClass: "px-1", on: { click: _vm.onOpen } },
-                      [_vm._v("Open")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      { staticClass: "px-1", on: { click: _vm.onClose } },
-                      [_vm._v("Close")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-popover",
-                  {
-                    ref: "popover1",
-                    attrs: { target: "popoverButton-event", title: "Popover" }
-                  },
-                  [
-                    _vm._v("\n          Hello "),
-                    _c("strong", [_vm._v("World!")])
-                  ]
-                )
-              ],
-              1
+                ])
+              }),
+              0
             )
           ]
         ),
@@ -616,64 +529,49 @@ var render = function() {
           [
             _c("div", { attrs: { slot: "header" }, slot: "header" }, [
               _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Popover ")]),
-              _vm._v(" "),
-              _c("small", [_vm._v("enable/disable events")])
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("striped")])
             ]),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "d-flex flex-column text-md-center" },
               [
-                _c(
-                  "div",
-                  { staticClass: "p-2" },
-                  [
-                    _c(
-                      "b-btn",
-                      {
-                        attrs: {
-                          id: "popoverButton-disableevent",
-                          variant: "primary"
-                        }
-                      },
-                      [_vm._v("I have a popover")]
-                    )
-                  ],
-                  1
-                ),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: { value: 25, variant: "success", striped: _vm.striped }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: { value: 50, variant: "info", striped: _vm.striped }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: { value: 75, variant: "warning", striped: _vm.striped }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: { value: 100, variant: "danger", striped: _vm.striped }
+                }),
                 _vm._v(" "),
                 _c(
-                  "div",
-                  { staticClass: "p-2" },
-                  [
-                    _c(
-                      "b-btn",
-                      { staticClass: "px-1", on: { click: _vm.onEnable } },
-                      [_vm._v("Enable")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      { staticClass: "px-1", on: { click: _vm.onDisable } },
-                      [_vm._v("Disable")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-popover",
+                  "b-button",
                   {
-                    ref: "popover2",
-                    attrs: {
-                      target: "popoverButton-disableevent",
-                      title: "Popover"
+                    attrs: { variant: "secondary" },
+                    on: {
+                      click: function($event) {
+                        _vm.striped = !_vm.striped
+                      }
                     }
                   },
                   [
-                    _vm._v("\n          Hello "),
-                    _c("strong", [_vm._v("World!")])
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.striped ? "Remove" : "Add") +
+                        " Striped\n        "
+                    )
                   ]
                 )
               ],
@@ -688,116 +586,188 @@ var render = function() {
           [
             _c("div", { attrs: { slot: "header" }, slot: "header" }, [
               _c("i", { staticClass: "fa fa-align-justify" }),
-              _c("strong", [_vm._v(" Popover ")]),
-              _c("small", [
-                _c("code", [_vm._v("v-b-popover")]),
-                _vm._v(" directive")
-              ])
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("animated")])
             ]),
             _vm._v(" "),
             _c(
-              "b-row",
+              "div",
+              [
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: {
+                    value: 25,
+                    variant: "success",
+                    striped: "",
+                    animated: _vm.animate
+                  }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: {
+                    value: 50,
+                    variant: "info",
+                    striped: "",
+                    animated: _vm.animate
+                  }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-2",
+                  attrs: {
+                    value: 75,
+                    variant: "warning",
+                    striped: "",
+                    animated: _vm.animate
+                  }
+                }),
+                _vm._v(" "),
+                _c("b-progress", {
+                  staticClass: "mb-3",
+                  attrs: {
+                    value: 100,
+                    variant: "danger",
+                    animated: _vm.animate
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "b-button",
+                  {
+                    attrs: { variant: "secondary" },
+                    on: {
+                      click: function($event) {
+                        _vm.animate = !_vm.animate
+                      }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.animate ? "Stop" : "Start") +
+                        " Animation\n        "
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "b-card",
+          { attrs: { "header-tag": "header", "footer-tag": "footer" } },
+          [
+            _c("div", { attrs: { slot: "header" }, slot: "header" }, [
+              _c("i", { staticClass: "fa fa-align-justify" }),
+              _c("strong", [_vm._v(" Progress ")]),
+              _c("small", [_vm._v("multiple bars")])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
               [
                 _c(
-                  "b-col",
-                  { staticClass: "py-3 text-center", attrs: { md: "3" } },
+                  "b-progress",
+                  { staticClass: "mb-3", attrs: { max: _vm.max3 } },
                   [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-popover",
-                            rawName: "v-b-popover.hover.top",
-                            value: "I am Top",
-                            expression: "'I am Top'",
-                            modifiers: { hover: true, top: true }
-                          }
-                        ],
-                        attrs: { title: "Popover!", variant: "primary" }
-                      },
-                      [_vm._v("Top")]
-                    )
+                    _c("b-progress-bar", {
+                      attrs: { variant: "primary", value: _vm.values[0] }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: { variant: "success", value: _vm.values[1] }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: { variant: "info", value: _vm.values[2] }
+                    })
                   ],
                   1
                 ),
                 _vm._v(" "),
                 _c(
-                  "b-col",
-                  { staticClass: "py-3 text-center", attrs: { md: "3" } },
+                  "b-progress",
+                  {
+                    staticClass: "mb-3",
+                    attrs: { "show-progress": "", max: _vm.max3 }
+                  },
                   [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-popover",
-                            rawName: "v-b-popover.hover.left",
-                            value: "I am Left",
-                            expression: "'I am Left'",
-                            modifiers: { hover: true, left: true }
-                          }
-                        ],
-                        attrs: { title: "Popover!", variant: "primary" }
-                      },
-                      [_vm._v("Left")]
-                    )
+                    _c("b-progress-bar", {
+                      attrs: { variant: "primary", value: _vm.values[0] }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: { variant: "success", value: _vm.values[1] }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: { variant: "info", value: _vm.values[2] }
+                    })
                   ],
                   1
                 ),
                 _vm._v(" "),
                 _c(
-                  "b-col",
-                  { staticClass: "py-3 text-center", attrs: { md: "3" } },
+                  "b-progress",
+                  {
+                    staticClass: "mb-3",
+                    attrs: { "show-value": "", striped: "", max: _vm.max3 }
+                  },
                   [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-popover",
-                            rawName: "v-b-popover.hover.right",
-                            value: "I am Right",
-                            expression: "'I am Right'",
-                            modifiers: { hover: true, right: true }
-                          }
-                        ],
-                        attrs: { title: "Popover!", variant: "primary" }
-                      },
-                      [_vm._v("Right")]
-                    )
+                    _c("b-progress-bar", {
+                      attrs: { variant: "primary", value: _vm.values[0] }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: { variant: "success", value: _vm.values[1] }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: { variant: "info", value: _vm.values[2] }
+                    })
                   ],
                   1
                 ),
                 _vm._v(" "),
                 _c(
-                  "b-col",
-                  { staticClass: "py-3 text-center", attrs: { md: "3" } },
+                  "b-progress",
+                  { staticClass: "mb-3", attrs: { max: _vm.max3 } },
                   [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-popover",
-                            rawName: "v-b-popover.hover.bottom",
-                            value: "I am Bottom",
-                            expression: "'I am Bottom'",
-                            modifiers: { hover: true, bottom: true }
-                          }
-                        ],
-                        attrs: { title: "Popover!", variant: "primary" }
-                      },
-                      [_vm._v("Bottom")]
-                    )
+                    _c("b-progress-bar", {
+                      attrs: {
+                        variant: "primary",
+                        value: _vm.values[0],
+                        "show-progress": ""
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: {
+                        variant: "success",
+                        value: _vm.values[1],
+                        animated: "",
+                        "show-progress": ""
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("b-progress-bar", {
+                      attrs: {
+                        variant: "info",
+                        value: _vm.values[2],
+                        striped: "",
+                        "show-progress": ""
+                      }
+                    })
                   ],
                   1
                 )
               ],
               1
             )
-          ],
-          1
+          ]
         )
       ],
       1
@@ -811,17 +781,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/base/Popovers.vue":
-/*!***********************************************************!*\
-  !*** ./resources/assets/js/admin/views/base/Popovers.vue ***!
-  \***********************************************************/
+/***/ "./resources/assets/js/admin/views/base/ProgressBars.vue":
+/*!***************************************************************!*\
+  !*** ./resources/assets/js/admin/views/base/ProgressBars.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Popovers_vue_vue_type_template_id_11899829___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popovers.vue?vue&type=template&id=11899829& */ "./resources/assets/js/admin/views/base/Popovers.vue?vue&type=template&id=11899829&");
-/* harmony import */ var _Popovers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Popovers.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/base/Popovers.vue?vue&type=script&lang=js&");
+/* harmony import */ var _ProgressBars_vue_vue_type_template_id_565ee170___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProgressBars.vue?vue&type=template&id=565ee170& */ "./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=template&id=565ee170&");
+/* harmony import */ var _ProgressBars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProgressBars.vue?vue&type=script&lang=js& */ "./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -831,9 +801,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Popovers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Popovers_vue_vue_type_template_id_11899829___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Popovers_vue_vue_type_template_id_11899829___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _ProgressBars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ProgressBars_vue_vue_type_template_id_565ee170___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ProgressBars_vue_vue_type_template_id_565ee170___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -843,38 +813,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/assets/js/admin/views/base/Popovers.vue"
+component.options.__file = "resources/assets/js/admin/views/base/ProgressBars.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/base/Popovers.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/base/Popovers.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
+/***/ "./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Popovers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Popovers.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Popovers.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Popovers_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./ProgressBars.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBars_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/assets/js/admin/views/base/Popovers.vue?vue&type=template&id=11899829&":
-/*!******************************************************************************************!*\
-  !*** ./resources/assets/js/admin/views/base/Popovers.vue?vue&type=template&id=11899829& ***!
-  \******************************************************************************************/
+/***/ "./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=template&id=565ee170&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=template&id=565ee170& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popovers_vue_vue_type_template_id_11899829___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Popovers.vue?vue&type=template&id=11899829& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/Popovers.vue?vue&type=template&id=11899829&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popovers_vue_vue_type_template_id_11899829___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBars_vue_vue_type_template_id_565ee170___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./ProgressBars.vue?vue&type=template&id=565ee170& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/js/admin/views/base/ProgressBars.vue?vue&type=template&id=565ee170&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBars_vue_vue_type_template_id_565ee170___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popovers_vue_vue_type_template_id_11899829___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProgressBars_vue_vue_type_template_id_565ee170___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
