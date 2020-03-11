@@ -145,7 +145,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     var _this = this;
 
     if (this.items.length === 0) {
-      console.log('mount');
       this.loading = true;
       this.getUsersPagination(this.currentPage).then(function () {
         _this.loading = false;
@@ -158,13 +157,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     currentPage: function currentPage() {
       var _this2 = this;
 
-      console.log(this.currentPage);
-      console.log(this.getCurrentPage);
-
       if (this.currentPage !== this.getCurrentPage) {
         this.loading = true;
         this.getUsersPagination(this.currentPage).then(function () {
-          console.log('change on watch');
           _this2.loading = false;
           _this2.items = _this2.getItems;
         }).catch(function () {
@@ -185,7 +180,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     rowClicked: function rowClicked(item) {
       var userLink = this.userLink(item.uuid);
-      console.log(userLink);
       this.$router.push({
         path: userLink
       });

@@ -27,6 +27,22 @@ class UserServices
     }
   }
 
+  public function getUserByUuid($uuid)
+  {
+    try {
+      $user = User::where('uuid', $uuid)->get();
+      if ($user) {
+        $user->getStatus;
+        $user->getRole;
+        return $user;
+      }
+      return false;
+    } catch (\Throwable $th) {
+      //throw $th;
+      return false;
+    }
+  }
+
   public function createUser($data)
   {
     try {

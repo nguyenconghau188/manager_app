@@ -65,6 +65,20 @@ const actions = {
         }
       );
   },
+  getUserById(context, id) {
+    return userServices.getUser(id)
+      .then(
+        (res) => {
+          context.commit('setUser', res.data.data);
+          context.commit('setLoadingIssue', '');
+        },
+        (err) => {
+          console.log('error')
+          context.commit('setUser', []);
+          context.commit('setLoadingIssue', 'Can not loading. Please try again!');
+        },
+      )
+  },
 };
 
 const mutations = {

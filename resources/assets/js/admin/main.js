@@ -7,19 +7,18 @@ import 'core-js/es7/array'
 // import cssVars from 'css-vars-ponyfill'
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
+import VueSweetalert2 from 'vue-sweetalert2';
 import App from './App'
 import router from './router'
 import store from './store'
 import Axios from 'axios';
-import VueSweetAlert2 from 'vue-sweetalert2';
 
 // todo
 // cssVars()
-
-Vue.use(BootstrapVue);
-Vue.use(VueSweetAlert2);
-
 /* eslint-disable no-new */
+Vue.use(BootstrapVue);
+Vue.use(VueSweetalert2);
+
 new Vue({
   el: '#app',
   router,

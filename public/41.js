@@ -99,25 +99,53 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])({
-    users: 'user/getUsers'
+    users: 'user/getUsers',
+    getUser: 'user/getUser',
+    loadingIssue: 'user/getLoadingIssue'
   })),
   mounted: function mounted() {
-    var id = this.$route.params.id;
-    console.log(id);
-    this.user = this.users.find(function (user) {
-      return user.uuid === id;
-    }); // const userDetails = user ? Object.entries(user) : [['uuid', 'Not found']]
-    // this.item = userDetails.map(([key, value]) => {return {key: key, value: value}})
+    var _this = this;
 
-    console.log(this.user);
+    var id = this.$route.params.id;
+
+    if (this.users.length !== 0) {
+      this.user = this.users.find(function (user) {
+        return user.uuid === id;
+      });
+    } else {
+      this.getUserById(id).then(function (result) {
+        console.log(_this.loadingIssue);
+
+        if (_this.loadingIssue === '') {
+          _this.user = _this.getUser;
+        } else {
+          console.log(_this);
+
+          _this.makeToast(_this.loadingIssue, 'danger');
+
+          _this.$router.push({
+            path: '/users'
+          });
+        }
+      });
+    }
   },
-  methods: {
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('user', ['getUserById']), {
     goBack: function goBack() {
       this.$router.go(-1); // this.$router.replace({path: '/users'})
     },
     onSubmit: function onSubmit() {},
-    onReset: function onReset() {}
-  }
+    onReset: function onReset() {},
+    makeToast: function makeToast(message) {
+      var variant = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+      console.log('toast');
+      this.$swal('Hello Vue world!!!'); // this.$bvToast.toast(message, {
+      //   title: 'Login Fail',
+      //   variant: variant,
+      //   solid: true
+      // });
+    }
+  })
 });
 
 /***/ }),

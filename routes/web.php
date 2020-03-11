@@ -15,9 +15,9 @@
 // });
 Route::group(['prefix' => 'admin'], function () {
     // echo 'admin';
-    Route::any('/{any?}', function() {
+    Route::any('{all?}', function() {
         return view('admin.index');
-    });
+    })->where('all', '.*');
 });
 Route::get('/', function () {
     return view('welcome');

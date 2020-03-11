@@ -136,7 +136,6 @@ export default {
   },
   mounted() {
     if (this.items.length === 0) {
-      console.log('mount')
       this.loading = true;
       this.getUsersPagination(this.currentPage)
         .then(() => {
@@ -148,13 +147,10 @@ export default {
   },
   watch: {
     currentPage: function() {
-      console.log(this.currentPage)
-      console.log(this.getCurrentPage)
       if (this.currentPage !== this.getCurrentPage) {
         this.loading = true;
         this.getUsersPagination(this.currentPage)
             .then(() => { 
-              console.log('change on watch')
               this.loading = false;
               this.items = this.getItems;
             })
@@ -179,7 +175,6 @@ export default {
     },
     rowClicked (item) {
       const userLink = this.userLink(item.uuid);
-      console.log(userLink)
       this.$router.push({path: userLink})
     },
   }

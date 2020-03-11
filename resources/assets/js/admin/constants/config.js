@@ -4,6 +4,7 @@ const config = {
   user: {
     loginUrl: '/api/login',
     usersPaginationUrl: '/api/users?page=',
+    userUrl: '/api/users/',
   }
 };
 

@@ -40,6 +40,8 @@
   <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script src="{{ mix('js/admin/main.js') }}"></script>
+    <script src="{{ mix('js/admin/main.js') }}">
+      console.log('in php')
+    </script>
   </body>
 </html>

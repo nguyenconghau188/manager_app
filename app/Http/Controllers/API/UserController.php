@@ -73,4 +73,14 @@ class UserController extends Controller
         }
         return response()->json(['error'=>'Error!'], 401);
     }
+
+    public function getUserByUuid($uuid)
+    {
+        $user = $this->userSerivces->getUserByUuid($uuid);
+
+        if ($user) {
+            return response()->json(['data'=>$user], $this->successStatus);
+        }
+        return response()->json(['error'=>'User is not available!'], 401);
+    }
 }

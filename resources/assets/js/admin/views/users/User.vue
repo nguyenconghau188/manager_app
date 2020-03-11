@@ -84,18 +84,33 @@ export default {
   computed: {
     ...mapGetters({
       users: 'user/getUsers',
+      getUser: 'user/getUser',
+      loadingIssue: 'user/getLoadingIssue',
     }),
   },
   mounted() {
     let id = this.$route.params.id;
-    console.log(id)
-    this.user = this.users.find(user => user.uuid === id);
-    // const userDetails = user ? Object.entries(user) : [['uuid', 'Not found']]
-    // this.item = userDetails.map(([key, value]) => {return {key: key, value: value}})
-                  
-    console.log(this.user)
+    if (this.users.length !== 0) {
+      this.user = this.users.find(user => user.uuid === id);
+    }
+    else {
+      this.getUserById(id)
+        .then((result) => {
+          console.log(this.loadingIssue)
+          if (this.loadingIssue === '') {
+            this.user = this.getUser;
+          }
+          else {
+             console.log(this)
+            this.makeToast(this.loadingIssue, 'danger');
+            this.$router.push({path: '/users'})   
+           
+          }
+        });
+    }
   },
   methods: {
+    ...mapActions('user', ['getUserById']),
     goBack() {
       this.$router.go(-1)
       // this.$router.replace({path: '/users'})
@@ -105,6 +120,15 @@ export default {
     },
     onReset() {
 
+    },
+    makeToast(message, variant = null) {
+      console.log('toast');
+      this.$swal('Hello Vue world!!!');
+      // this.$bvToast.toast(message, {
+      //   title: 'Login Fail',
+      //   variant: variant,
+      //   solid: true
+      // });
     },
   }
 }

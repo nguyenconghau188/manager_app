@@ -65,6 +65,22 @@ const userServices = {
       });
     });
   },
+  getUser(id) {
+    return new Promise((resolve, reject) => {
+      axios({
+        url: `${config.baseUrl}${config.user.userUrl}${id}`,
+        method: 'GET',
+      })
+      .then(res => {
+          resolve(res);
+        },
+      )
+      .catch(error => {
+        console.log(error)
+        reject(error);
+      });
+    });
+  },
 }
 
 export default userServices;

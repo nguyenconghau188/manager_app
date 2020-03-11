@@ -105,7 +105,7 @@ function configRoutes() {
           component: Widgets
         },
         {
-          path: 'users',
+          path: '/users',
           // redirect: '/users',
           // meta: { label: 'Users'},
           component: {
@@ -354,6 +354,7 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
+  console.log('in here')
   const publicPages = config.publicPages;
   const authRequest = !publicPages.includes(to.path);
   const loginIn = localStorage.getItem('token');
