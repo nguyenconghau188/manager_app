@@ -80500,6 +80500,9 @@ var config = {
     loginUrl: '/api/login',
     usersPaginationUrl: '/api/users?page=',
     userUrl: '/api/users/'
+  },
+  roles: {
+    getRolesUrl: 'api/roles'
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (config);
@@ -81071,7 +81074,7 @@ var userServices = {
         localStorage.setItem('token', token);
         localStorage.setItem('user', JSON.stringify(user));
         localStorage.removeItem('loginIssue');
-        axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.headers.common['Authorization'] = token;
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.headers.common['Authorizatio nn'] = token;
         resolve(res);
       }).catch(function (err) {
         localStorage.removeItem('token');

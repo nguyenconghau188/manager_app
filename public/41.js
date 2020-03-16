@@ -78,6 +78,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'User',
@@ -196,20 +216,18 @@ var render = function() {
                             "b-form-group",
                             {
                               attrs: {
-                                id: "input-group-1",
+                                id: "input-group-email",
                                 label: "Email address:",
-                                "label-for": "input-1",
-                                description:
-                                  "We'll never share your email with anyone else."
+                                "label-for": "input-email"
                               }
                             },
                             [
                               _c("b-form-input", {
                                 attrs: {
-                                  id: "input-1",
+                                  id: "input-email",
                                   type: "email",
                                   required: "",
-                                  placeholder: "Enter email"
+                                  placeholder: "Email"
                                 },
                                 model: {
                                   value: _vm.user.email,
@@ -227,15 +245,15 @@ var render = function() {
                             "b-form-group",
                             {
                               attrs: {
-                                id: "input-group-2",
-                                label: "Your Name:",
-                                "label-for": "input-2"
+                                id: "input-group-name",
+                                label: "Name:",
+                                "label-for": "input-name"
                               }
                             },
                             [
                               _c("b-form-input", {
                                 attrs: {
-                                  id: "input-2",
+                                  id: "input-name",
                                   required: "",
                                   placeholder: "Enter name"
                                 },
@@ -250,6 +268,36 @@ var render = function() {
                             ],
                             1
                           ),
+                          _vm._v(" "),
+                          _c(
+                            "b-form-group",
+                            {
+                              attrs: {
+                                id: "input-group-phone",
+                                label: "Phone number:",
+                                "label-for": "input-phone"
+                              }
+                            },
+                            [
+                              _c("b-form-input", {
+                                attrs: {
+                                  id: "input-phone",
+                                  required: "",
+                                  placeholder: "Phone number"
+                                },
+                                model: {
+                                  value: _vm.user.phone_number,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.user, "phone_number", $$v)
+                                  },
+                                  expression: "user.phone_number"
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("b-form-group"),
                           _vm._v(" "),
                           _c(
                             "b-button",

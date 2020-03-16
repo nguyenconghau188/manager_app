@@ -8,29 +8,49 @@
         <div>
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
           <b-form-group
-            id="input-group-1"
+            id="input-group-email"
             label="Email address:"
-            label-for="input-1"
-            description="We'll never share your email with anyone else."
+            label-for="input-email"
           >
             <b-form-input
-              id="input-1"
+              id="input-email"
               v-model="user.email"
               type="email"
               required
-              placeholder="Enter email"
+              placeholder="Email"
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+          <b-form-group 
+            id="input-group-name" 
+            label="Name:" 
+            label-for="input-name"
+          >
             <b-form-input
-              id="input-2"
+              id="input-name"
               v-model="user.name"
               required
               placeholder="Enter name"
             ></b-form-input>
           </b-form-group>
 
+          <b-form-group
+            id="input-group-phone"
+            label="Phone number:"
+            label-for="input-phone"
+          >
+            <b-form-input
+              id="input-phone"
+              v-model="user.phone_number"
+              required
+              placeholder="Phone number"
+            >
+            </b-form-input>
+          </b-form-group>
+
+          <b-form-group>
+            
+          </b-form-group>
           <!-- <b-form-group id="input-group-3" label="Role:" label-for="input-3">
             <b-form-select
               id="input-3"

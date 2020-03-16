@@ -5,6 +5,9 @@ const config = {
     loginUrl: '/api/login',
     usersPaginationUrl: '/api/users?page=',
     userUrl: '/api/users/',
+  },
+  roles: {
+    getRolesUrl: 'api/roles',
   }
 };
 

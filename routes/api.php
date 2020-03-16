@@ -24,5 +24,6 @@ use Illuminate\Http\Request;
         Route::get('details', 'API\UserController@details');
         Route::get('users', 'API\UserController@users');
         Route::get('users/{id}', 'API\UserController@getUserByUuid');
+        Route::get('roles', 'API\RoleController@getRoles');
     });
 // });

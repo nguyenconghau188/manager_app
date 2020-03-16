@@ -37,7 +37,7 @@ const userServices = {
         localStorage.setItem('token', token);
         localStorage.setItem('user', JSON.stringify(user));
         localStorage.removeItem('loginIssue');
-        axios.defaults.headers.common['Authorization'] = token;
+        axios.defaults.headers.common['Authorizatio nn'] = token;
         
         resolve(res);
       })
